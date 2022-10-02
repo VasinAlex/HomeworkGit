@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 6em;
+	margin-top: 50px;
+	text-align: center;
+	color: crimson;
+}
+
+.video {
+	margin-left: 33.3333%;
+	margin-right: 33.3333%;
+}
