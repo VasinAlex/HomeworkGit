@@ -3,14 +3,35 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.video {
-	margin-left: 33.3333%;
-	margin-right: 33.3333%;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-h1 {
-	margin-top: 50px;
-	text-align: center;
-	color: blue;
+.container {
+	/* width: calc(100%-30px); */
+	width: 70%;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 
+img {
+	padding: 30px 0px 30px 15px;
+}
+
+h1,
+h2 {
+	padding: 35px 0 15px;
+}
+
+ul {
+	padding: 10px 0px 20px 50px;
+}
+
+.iframe-cv {
+	height: 500px;
+	width: 900px;
+}
