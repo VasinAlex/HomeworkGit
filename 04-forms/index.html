@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>04-Lesson Forms</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<form action="#" method="get">
+
+			<fieldset>
+
+				<label for="name">Повне ім'я</label>
+				<input class="granica" required id="name" type="text" name="username">
+
+				<br>
+
+				<label for="email">Email</label>
+				<input required id="email" type="email" name="email">
+
+				<br>
+
+
+				<label for="password">Пароль</label>
+				<input required id="password" type="password" name="pass">
+
+				<br>
+
+				<label for="password2">Пароль ще раз</label>
+				<input required id="password2" type="password" name="pass2">
+
+				<br>
+
+
+				<label>Стать</label>
+				<input checked type="radio" name="gender" value="male"> члоловіча
+				<input type="radio" name="gender" value="female"> жіноча
+				<br>
+
+				<label for="age">Вік</label>
+				<input required id="age" type="number" name="age">
+				<br>
+
+				<label for="courses">Курсы</label>
+				<select id="courses" name="courses">
+					<option>==Виберіть курс==</option>
+					<option value="front-end">Front-End</option>
+					<option value="back-end">Back-End</option>
+					<option value="project-management">Project Management</option>
+					<option value="qa-manual">QA Manual</option>
+				</select>
+				<br>
+
+				<label for="area">Повна адреса</label>
+				<textarea required id="area" placeholder="Країна, регіон, місто, вулиця" name="address"></textarea>
+				<br>
+
+				<input required id="agree" type="checkbox" name="agree" value="yes">
+				Я погоджуюсь з обробкою персональних даних
+				<br>
+
+				<div class="button">
+					<button type="reset">Очистити форму</button>
+					<button type="submit"> Зареэструватися</button>
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
