@@ -40,7 +40,7 @@ input {
 	margin: 20px 0;
 }
 
-#area {
+#textarea {
 	height: 50px;
 	resize: none;
 }
