@@ -12,22 +12,20 @@ body {
 
 .container {
 	width: 90%;
-	max-width: 800px;
+	max-width: 600px;
 	margin: 0 auto;
 	margin-top: 50px;
 }
 
 fieldset {
-	margin: 0 auto;
 	border: none;
 	background-color: #e8e8e8;
-	width: 500px;
 }
 
 label {
-	padding: 0 65px;
+	margin-left: 50px;
 	display: inline-block;
-	width: 250px;
+	width: 120px;
 }
 
 input {
@@ -42,9 +40,18 @@ input {
 	margin: 20px 0;
 }
 
-#agree {
+#area {
+	height: 50px;
+	resize: none;
+}
 
+#agree {
 	margin: 20px 0 0 50px;
+}
+
+.agree-title {
+	margin: 5px;
+	width: 400px;
 }
 
 .button {
@@ -54,5 +61,5 @@ input {
 
 button {
 	font-size: 16px;
-	padding: 0 10px;
+	padding: 0 20px;
 }

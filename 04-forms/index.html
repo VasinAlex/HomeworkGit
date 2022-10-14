@@ -10,9 +10,10 @@
 </head>
 
 <body>
+
 	<div class="container">
 
-		<form action="#" method="get">
+		<form action="#" method="post">
 
 			<fieldset>
 
@@ -38,9 +39,11 @@
 				<br>
 
 
-				<label>Стать</label>
-				<input checked type="radio" name="gender" value="male"> члоловіча
-				<input type="radio" name="gender" value="female"> жіноча
+				<label for="gender">Стать</label>
+
+				<label><input id="gender" checked type="radio" name="gender" value="male"> чоловіча</label>
+				<label><input type="radio" name="gender" value="female"> жіноча</label>
+
 				<br>
 
 				<label for="age">Вік</label>
@@ -62,7 +65,7 @@
 				<br>
 
 				<input required id="agree" type="checkbox" name="agree" value="yes">
-				Я погоджуюсь з обробкою персональних даних
+				<label class="agree-title" for="agree">Я погоджуюсь з обробкою персональних даних</label>
 				<br>
 
 				<div class="button">
@@ -71,6 +74,7 @@
 				</div>
 
 			</fieldset>
+
 		</form>
 	</div>
 </body>

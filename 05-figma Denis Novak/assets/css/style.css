@@ -27,18 +27,15 @@ body {
 }
 
 header {
-
 	height: 80px;
 	line-height: 80px;
 }
 
 #header .container {
-
 	border-bottom: 1px solid #828282;
 }
 
 .maine-menu ul {
-
 	text-align: center;
 	list-style: none;
 }
@@ -58,33 +55,30 @@ header {
 	color: #070707;
 }
 
-.maine {}
+/* ------------------------------ */
 
-.ferst-screen {
-	margin-top: 15px;
+.novik {
+	margin-top: 12px;
 }
 
-h1 {
+.novik h1 {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 65px;
 	color: #070707;
-
+	margin-bottom: 44px;
 }
 
-.ferst-screen__image {
-	margin-top: 45px;
+img {
+	vertical-align: top;
 }
-
-
-
-.bg {
-	background-color: #F6F6F6;
+/* ----------------------------------- */
+.bg-gray {
+	background: #F6F6F6;
 }
-
 
 h2 {
-	padding-top: 92px;
+	padding-top: 100px;
 	font-weight: 700;
 	font-size: 34px;
 	line-height: 46px;
@@ -92,53 +86,8 @@ h2 {
 	color: #070707;
 }
 
-.about-me {
-	background-color: #F6F6F6;
-}
 
-.about-me__item {
-	padding-top: 50px;
-	width: 480px;
 
-}
-
-.about-me__item p {
-	margin-bottom: 30px;
-}
-
-.text {
-	margin: 0 auto;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 25px;
-	text-align: center;
-	color: #070707;
-}
-
-.product-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.send-message {
-	color: #FFFFFF;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 25px;
-	text-align: center;
-	letter-spacing: 0.1em;
-	align-items: center;
-	/* padding: 0px 16px; */
-	width: 180px;
-	height: 44px;
-	background: #070707;
-	border-radius: 22px;
-}
-.social-group{
-	
-}
-
-.social-group ul li {
-	display: inline-block;
-	margin: 0px 25px;
+.star-light {
+	opacity: 20%;
 }
