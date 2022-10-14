@@ -12,13 +12,13 @@ body {
 
 .container {
 	width: 90%;
-	max-width:500px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-top: 50px;
 }
 
 fieldset {
-	
+
 	background-color: #e8e8e8;
 }
 
@@ -58,7 +58,3 @@ input {
 	padding: 20px;
 	text-align: center;
 }
-
-
-
-
