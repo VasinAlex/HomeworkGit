@@ -1,0 +1,16 @@
+
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+label {
+	margin: 5px 0;	
+	display: inline-block;
+	width: 180px;
+}
+
+select {
+	margin:10px 0;
+}
