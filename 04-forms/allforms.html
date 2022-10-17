@@ -59,8 +59,8 @@
 
 			<fieldset>
 				<legend>Інша інформація</legend>
-				<label>Улюблений колір</label>
-				<input type="color" name="color">
+				<label>Улюблений колір
+					<input type="color" name="color"></label>
 				<br>
 
 				<label for="phone">Номер телефона</label>
@@ -75,19 +75,19 @@
 				<input id="url" type="url" name="url" placeholder="https://google.com">
 				<br>
 
-				<label>Число від 1 до 10</label>
-				<input type="range" name="range" min="1" max="10">
+				<label>Число від 1 до 10
+					<input type="range" name="range" min="1" max="10"></label>
 				<br>
 
-				<label>Поділися зображенням</label>
-				<input type="file" name="picture">
+				<label>Поділися зображенням
+					<input type="file" name="picture"></label>
 			</fieldset>
 
 			<fieldset>
 				<legend>Не input-ы</legend>
 
 				<label for="drinks">Улюблені напоі</label>
-				<select name="nonealcohol" id="drinks">
+				<select name="drinks[]" id="drinks">
 					<option>==Вибери===</option>
 					<optgroup label="Безакогольні">
 						<option value="tea">Чай</option>
@@ -104,7 +104,7 @@
 				<br>
 
 				<label for="drinks2">Улюблені напоі</label>
-				<select name="alcohol" id="drinks2" multiple>
+				<select name="alcohol[]" id="drinks2" multiple>
 					<option>==Вибери===</option>
 					<optgroup label="Безакогольні">
 						<option value="tea">Чай</option>

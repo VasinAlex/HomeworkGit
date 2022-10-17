@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	color: #070707;
+}
 
 html,
 body {
@@ -17,7 +25,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 	font-size: 18px;
-	line-height: 25px;
+	line-height: 24.5px;
+
 }
 
 .container {
@@ -37,7 +46,7 @@ header {
 
 .maine-menu ul {
 	text-align: center;
-	list-style: none;
+	/* list-style: none; */
 }
 
 .maine-menu ul li {
@@ -55,13 +64,14 @@ header {
 	color: #070707;
 }
 
-/* ------------------------------ */
+/* -----------Novik------------------- */
 
 .novik {
 	margin-top: 12px;
 }
 
 .novik h1 {
+
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 65px;
@@ -71,14 +81,34 @@ header {
 
 img {
 	vertical-align: top;
+	max-width: 100%;
 }
-/* ----------------------------------- */
+
+section.novik {
+	text-align: start;
+	padding: 0;
+}
+
+/* ----------------About------------------- */
 .bg-gray {
 	background: #F6F6F6;
 }
 
-h2 {
-	padding-top: 100px;
+section {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.about .container {
+	max-width: 480px;
+}
+
+.about .section-title {
+	margin-bottom: 45px;
+}
+
+.section-title {
+	text-align: center;
 	font-weight: 700;
 	font-size: 34px;
 	line-height: 46px;
@@ -87,7 +117,192 @@ h2 {
 }
 
 
+.content {
+	text-align: center;
+
+}
+
+.content p {
+	margin-bottom: 30px;
+}
+
+.content *:last-child {
+	margin-bottom: 0;
+}
+
+
+
+/* -----------------Skills------------------------ */
+.skills .section-title {
+	margin-bottom: 15px;
+}
+
+.skills-list {
+	font-size: 0;
+}
+
+.skills-list li {
+
+	display: inline-block;
+	margin-right: 97px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #828282;
+
+}
+
+.skills-list li:last-child {
+	margin-right: 0;
+}
+
+.skills-list {
+	margin-top: 50px;
+}
+
+.img-skills img {
+	margin-bottom: 25px;
+
+}
+
+.skills-list span {
+	display: block;
+	margin-bottom: 60px;
+}
+
+.skills-list span:last-child {
+	height: 38px;
+}
+
+
+.skills-list img:first-child {
+	margin-left: 0;
+}
+
+.skills-list img:last-child {
+	margin-right: 0;
+}
 
 .star-light {
 	opacity: 20%;
 }
+
+.stars img {
+	width: 26px;
+	height: 26px;
+	margin-left: -3px;
+	margin-right: 9px;
+}
+
+/* ----------------Portfolio------------- */
+
+.portfolio h2 {
+	margin-bottom: 45px;
+}
+
+.portfolio li {
+	margin-bottom: 70px;
+}
+
+.portfolio li:last-child {
+	margin-bottom: 0;
+}
+
+.portfolio img {
+	margin-bottom: 40px;
+}
+
+.fashion {}
+
+.reebok {}
+
+/* -----------------Contacts------------------------ */
+
+.contacts span {
+	display: inline-block;
+	width: 280px;
+	margin-top: 15px;
+}
+
+
+.button-wrap {
+	margin: 55px 0 30px;
+}
+
+.btn {
+	font-family: 'Open Sans';
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	background: #070707;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	border: 2px solid #070707;
+	border-radius: 22px;
+	padding: 0 15px;
+	transition: all 0.2s ease;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #070707;
+	cursor: pointer;
+}
+
+.btn:active {
+	background-color: #070707;
+	color: #fff;
+}
+
+.contacts-media li {
+	display: inline-block;
+	margin: 0 22px;
+}
+
+.contacts-media {
+	margin-bottom: 60px;
+
+}
+
+
+
+.likemeon {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: #828282;
+}
+
+/* ------------------------------- */
+
+.container {}
+
+.maine-menu {}
+
+.main {}
+
+.novik {}
+
+.novik-image {}
+
+.about {}
+
+.bg-gray {}
+
+.section-title {}
+
+.footer {}
+
+.contacts {}
+
+.button-wrap {}
+
+.btn {}
+
+.likemeon {}
