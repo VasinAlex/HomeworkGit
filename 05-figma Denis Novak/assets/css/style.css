@@ -28,7 +28,6 @@ body {
 	line-height: 24.5px;
 
 }
-
 /* ------------Header-------------------- */
 .container {
 	width: 90%;
@@ -135,12 +134,12 @@ section {
 
 /* -----------------Skills------------------------ */
 .skills .section-title {
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 }
 
 .skills-list {
 	font-size: 0;
-	margin-top: 50px;
+	padding-top: 50px;
 }
 
 .skills-list li {
@@ -163,25 +162,23 @@ section {
 .img-skills {
 	padding-bottom: 25px;
 }
-
 .skill-title {
-	width: 90px;
+	width: 95px;
 	height: 38px;
-	margin: 0 auto 60px;
+	margin:0 auto 60px;
 }
 
-.stars {
-	font-size: 0;
+.stars{
+		font-size: 0;
 }
 
 .stars img {
-	padding-right: 8.5px;
+	margin-right: 8.5px;
 }
 
-.stars img:last-child {
-	padding-right: 0;
+.stars img:last-child{
+	margin-right: 0;
 }
-
 .star-light {
 	opacity: 0.1;
 }
@@ -202,14 +199,13 @@ section {
 
 .portfolio img {
 	margin-bottom: 40px;
-}
+	}
 
 .portfolio .container span {
 	display: block;
 	width: 200px;
 	margin: 0 auto;
 }
-
 /* -----------------Contacts------------------------ */
 
 .contacts p {
@@ -263,7 +259,7 @@ section {
 
 
 .likemeon {
-	/* font-weight: 400; */
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
 	text-align: center;
@@ -271,3 +267,4 @@ section {
 }
 
 /* ------------------------------- */
+
