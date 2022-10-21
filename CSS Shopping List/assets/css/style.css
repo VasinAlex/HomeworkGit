@@ -174,7 +174,7 @@ footer {
 }
 
 footer span {
-	vertical-align: middle;
+
 	color: #FF8984;
-	padding: 12px 223px 12px 204px;
+	margin: 12px auto;
 }

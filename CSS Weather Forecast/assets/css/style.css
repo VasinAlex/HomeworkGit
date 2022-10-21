@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lucida Sans Unicode';
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+
+	color: #FFFFFF;
+	background: blue;
+
+}
+
+li {
+	font-size: 16px;
+	list-style: none;
+
+}
+
+ul {
+
+	font-size: 0;
+}
+
+ul li {
+	display: inline-block;
+
+}
+
+.container {
+width: 90%;
+/* min-width: 588px; */
+max-width: 1160px;
+margin: 0 auto;
+}
+
+.wrapper {
+	padding-top: 131px;
+}
+
+span {
+	
+}
+
+li.lisbon {
+
+	width: 50%;
+	height: 25%px;
+	background: #3399CC;
+	border: 2px solid #FFFFFF;
+}
+
+li.paris {
+	width: 25%;
+	background: #33CCCC;
+	border: 2px solid #FFFFFF;
+}
+
+li.belgrade {
+	width: 25%;
+	background: #996699;
+	border: 2px solid #FFFFFF;
+}
