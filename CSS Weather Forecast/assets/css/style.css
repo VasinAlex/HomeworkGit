@@ -4,15 +4,27 @@
 	box-sizing: border-box;
 }
 
+* {
+	transition: all 0.1 ease-in;
+}
+
+html,
 body {
+	width: 100%;
+	height: 100%;
+
+}
+
+body {
+
 	font-family: 'Lucida Sans Unicode';
 	font-size: 22px;
 	line-height: 26px;
 	text-align: center;
-
+	height: 100%;
 	color: #FFFFFF;
-	background: blue;
-
+	background: #3399CC;
+	border: 25px solid #2B81AC;
 }
 
 li {
@@ -22,7 +34,6 @@ li {
 }
 
 ul {
-
 	font-size: 0;
 }
 
@@ -32,36 +43,134 @@ ul li {
 }
 
 .container {
-width: 90%;
-/* min-width: 588px; */
-max-width: 1160px;
-margin: 0 auto;
+	width: 90%;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
-.wrapper {
-	padding-top: 131px;
+
+.wrapper-title {
+	padding-top: 40px;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: left;
+	margin-bottom: 35px;
 }
 
-span {
-	
+.wrapper-title .wi-sunrise {
+	font-size: 26px;
+	line-height: 26px;
 }
 
-li.lisbon {
+.lisbon {
 
 	width: 50%;
-	height: 25%px;
 	background: #3399CC;
-	border: 2px solid #FFFFFF;
+	border: 4px solid #FFFFFF;
 }
 
-li.paris {
+.paris {
 	width: 25%;
 	background: #33CCCC;
-	border: 2px solid #FFFFFF;
+	border: 4px solid #FFFFFF;
 }
 
-li.belgrade {
+.belgrade {
 	width: 25%;
 	background: #996699;
-	border: 2px solid #FFFFFF;
+	border: 4px solid #FFFFFF;
+}
+
+
+.venice {
+	width: 25%;
+	background: #C24747;
+	border: 4px solid #FFFFFF;
+}
+
+.tel-avive {
+	width: 25%;
+	background: #E2674A;
+	border: 4px solid #FFFFFF;
+}
+
+.cair {
+	width: 25%;
+	background: #FFCC66;
+	border: 4px solid #FFFFFF;
+}
+
+.new-york {
+	width: 25%;
+	background: #99CC99;
+	border: 4px solid #FFFFFF;
+}
+
+.new-delhi {
+	width: 25%;
+	background: #669999;
+	border: 4px solid #FFFFFF;
+}
+
+.san-francisco {
+	width: 50%;
+	background: #CC6699;
+	border: 4px solid #FFFFFF;
+}
+
+.tokyo {
+	width: 25%;
+	background: #339966;
+	border: 4px solid #FFFFFF;
+}
+
+.sydney {
+	width: 100%;
+	background: #666699;
+	border: 4px solid #FFFFFF;
+}
+
+
+
+.wi {
+	font-size: 42px;
+	line-height: 61px;
+}
+
+.weather-item__city {
+	font-size: 22px;
+	line-height: 26px;
+	/* text-align: center; */
+	padding-top: 26px;
+	padding-bottom: 4px;
+}
+
+
+.weather__temp {
+	padding-right: 11px;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.weather-item__block {
+	opacity: 70%;
+	margin-bottom: 23px;
+	align-items: baseline;
+
+}
+
+ul:hover li:not(:hover) {
+	opacity: .5;
+}
+
+.wrapper-ps {
+	margin-top: 35px;
+	text-align-last: left;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.weather-item__block {
+	vertical-align: middle;
 }
