@@ -36,6 +36,14 @@ body {
 
 /* -----------Header------------------ */
 
+.page-wrapper {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 100%;
+}
+
+
 .container {
 	width: 90%;
 	max-width: 1200px;
@@ -51,6 +59,10 @@ body {
 .header .container {
 	height: 80px;
 	vertical-align: middle;
+}
+
+.main {
+	flex-grow: 1;
 }
 
 .menu__list {
@@ -220,6 +232,9 @@ body {
 	height: 50px;
 }
 
+/* .skills {
+	background: url(../images/bg-skills.png) center bottom/cover no-repeat;
+} */
 
 /* --------------Footer---------------- */
 
