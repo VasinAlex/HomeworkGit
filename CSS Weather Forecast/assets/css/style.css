@@ -158,12 +158,7 @@ ul:hover li:not(:hover) {
 	opacity: .5;
 }
 
-.wrapper-ps {
-	margin-top: 38px;
-	text-align-last: left;
-	font-size: 16px;
-	line-height: 19px;
-}
+
 
 .violet-bg .weather-item__city {
 	margin-left: 8px;
@@ -187,4 +182,11 @@ ul:hover li:not(:hover) {
 
 .orang-bg .wi {
 	margin-left: 45px;
+}
+
+footer {
+	margin-top: 38px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 19px;
 }
