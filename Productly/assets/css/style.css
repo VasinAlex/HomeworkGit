@@ -240,6 +240,7 @@ body {
 
 .skills {
 	background: url(../images/bg-skills.png) center bottom no-repeat;
+	background-size: cover; 
 
 }
 
