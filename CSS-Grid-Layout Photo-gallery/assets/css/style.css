@@ -160,3 +160,7 @@ h2 {
 .gallery__image:hover {
 	opacity: 1;
 }
+
+.portrait {
+	padding-bottom: 120px;
+}
