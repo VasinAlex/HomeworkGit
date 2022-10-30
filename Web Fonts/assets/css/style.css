@@ -1,49 +1,4 @@
-.tourney {
-	font-family: 'Tourney';
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 18px;
-	/* text-align: center; */
-	letter-spacing: 0.04em;
-	color: #000;
-}
 
-.staatliches {
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 28px;
-	letter-spacing: 0.03em;
-}
-
-.francoisone {
-	font-family: 'Francois One';
-	font-weight: 400;
-	font-size: 36px;
-	line-height: 48px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-}
-
-.farro {
-	font-family: 'Farro';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 30px;
-	letter-spacing: 0.04em;
-	text-transform: none;
-	
-}
-
-.ptsans-italic {
-	font-family: 'PT Sans';
-	font-style: italic;
-}
-
-.ptsans-bold {
-	font-family: 'PT Sans';
-	font-weight: 700;
-}
 
 
 * {
@@ -76,6 +31,53 @@ body {
 	font-size: 28px;
 	line-height: 48px;
 	color: #000000;
+}
+
+.tourney {
+	font-family: 'Tourney';
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 18px;
+	/* text-align: center; */
+	letter-spacing: 0.04em;
+	color: #000;
+}
+
+.staatliches {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+}
+
+.francoisone {
+	font-family: 'Francois One';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.farro {
+	font-family: 'Farro';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: 0.04em;
+	text-transform: none;
+	
+}
+
+.ptsans-italic {
+	font-family: 'PT Sans';
+	font-style: italic;
+}
+
+.ptsans-bold {
+	font-family: 'PT Sans';
+	font-weight: 700;
 }
 
 .container {
