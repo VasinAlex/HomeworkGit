@@ -119,7 +119,6 @@ input {
 
 .menu input+label {
 	position: relative;
-
 }
 
 .menu input+label::before {
@@ -131,7 +130,6 @@ input {
 	position: absolute;
 	bottom: 10px;
 	left: 12px;
-
 }
 
 
