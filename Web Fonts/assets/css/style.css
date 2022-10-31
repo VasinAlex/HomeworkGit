@@ -41,6 +41,7 @@ body {
 }
 
 .staatliches {
+	font-family: 'Staatliches';
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 28px;
@@ -60,7 +61,7 @@ body {
 	font-family: 'Farro';
 	font-style: normal;
 	font-weight: 300;
-	/* font-size: 30px; */
+
 	line-height: 30px;
 	letter-spacing: 0.0350em;
 	text-transform: none;
@@ -88,6 +89,7 @@ body {
 
 
 .header-nav a {
+
 	text-decoration: none;
 }
 
@@ -125,7 +127,7 @@ header .flex {
 
 
 header li {
-	font-family: 'Staatliches';
+	
 	text-transform: uppercase;
 	display: inline-block;
 	font-weight: 400;
@@ -171,6 +173,9 @@ header li {
 	margin-top: 60px;
 }
 
+.section:last-child {
+padding-bottom: 90px;
+}
 .section-title {
 	margin-bottom: 38px;
 }
