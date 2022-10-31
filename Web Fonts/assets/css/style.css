@@ -1,6 +1,3 @@
-
-
-
 * {
 	padding: 0;
 	margin: 0;
@@ -67,7 +64,7 @@ body {
 	line-height: 30px;
 	letter-spacing: 0.04em;
 	text-transform: none;
-	
+
 }
 
 .ptsans-italic {
@@ -150,6 +147,7 @@ p:last-child {
 .underline {
 	text-decoration-line: underline;
 }
+
 .textbg-grey {
 	height: 50px;
 	background: #c8c8c8;
