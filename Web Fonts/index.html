@@ -20,7 +20,7 @@
 
 				<nav class="header-nav">
 					<ul>
-						<li><a href="#" target="_blank">Documentation </a> / </li>
+						<li><a href="#" target="_blank">Documentation </a> <span class="slash">/</span> </li>
 						<li> <a href="#" target="_blank">Who's using</a></li>
 					</ul>
 				</nav>
@@ -34,14 +34,16 @@
 	<main>
 
 		<div class="container">
-			<div class="section chapte1">
-				<h2 class="francoisone section-title">Introduction<sup class="farro">Chapter 1</sup></h2>
+			<div class="section chapter1">
+
+				<h2 class="francoisone section-title">Introduction<sup class="farro"> Chapter 1</sup></h2>
+
 				<p>Welcome to the very start of your React Native journey! If you're looking for environment setup instructions,
 					they've moved to <a href="#">their own section</a>. Continue reading for an introduction to the documentation,
 					Native Components, React, and more!</p>
 			</div>
 
-			<div class="section chapte2">
+			<div class="section chapter2">
 				<h2 class="francoisone section-title">core components
 					<sup class="farro">Chapter 2</sup>
 				</h2>
@@ -50,14 +52,14 @@
 					platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as
 					to
 					describe the appearance and behavior of your UI using React components: <span class="ptsans-italic">bundles of
-						reusable, nestable code.</span>You can learn more about React in the next section. But first, let’s cover
+						reusable, nestable code.</span> You can learn more about React in the next section. But first, let’s cover
 					how
 					components work in React Native.</p>
 			</div>
 
 			<div class="section chapter3">
 				<h2 class="francoisone section-title">react fundamentals
-					<sup class="farro">Chapter 3</sup>
+					<sup class="farro"> Chapter 3</sup>
 				</h2>
 
 				<p>React Native runs on <a href="#">React</a>, a popular open source library for building user interfaces with
@@ -85,8 +87,7 @@
 					The React docs have <a href="#">a comprehensive guide to JSX</a> you can refer to learn even
 					more. Because JSX is JavaScript,
 					you can use variables inside it. Here you are declaring a <span class="textbg-grey">name</span> for the cat,
-					name, and embedding it with curly
-					braces inside <span class="textbg-grey">&lt;Text&gt;</span>
+					name, and embedding it with curly braces inside <span class="textbg-grey">&lt;Text&gt;</span>
 				</p>
 
 				<p>
@@ -102,18 +103,19 @@
 
 			</div>
 
-			<div class="section chapte4">
+			<div class="section chapter4">
 				<h2 class="francoisone section-title">handling text input
 					<sup class="farro">Chapter 4</sup>
 				</h2>
 
-				<p>TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a
-					function to be called every time the text changed, and an <span class="ptsans-italic">onSubmitEditing</span>
+				<p>TextInput is a Core Component that allows the user to enter text. It has an <span
+						class="ptsans-italic">onChangeText</span> prop that takes a
+					function to be called every time the text changed, and an onSubmitEditing
 					prop that takes a function to be called when the text is submitted.</p>
 
 				<p>For example, let's say that as the user types, you're translating their words into a different language. In
-					this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be
-					translated as "🍕 🍕".</p>
+					this new language, every single word is written the same way: <span class="scale">🍕</span>. So the sentence
+					"Hello there Bob" would be translated as "<span class="scale">🍕 🍕</span>".</p>
 			</div>
 
 		</div>
