@@ -69,8 +69,6 @@ body {
 }
 
 
-
-
 .ptsans-italic {
 	font-family: 'PT Sans';
 	font-style: italic;
@@ -127,7 +125,7 @@ header .flex {
 
 
 header li {
-	
+	font-family: 'Staatliches';
 	text-transform: uppercase;
 	display: inline-block;
 	font-weight: 400;
@@ -190,9 +188,9 @@ p:last-child {
 }
 
 .textbg-grey {
+	padding: 0 1px;
 	display: inline-block;
 	background: #c8c8c8;
-	/* margin-bottom: 10px; */
 }
 
 .chapter3 p:nth-child(5) {
