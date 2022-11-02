@@ -110,8 +110,10 @@ body {
 	border-right: 1px solid $title-color;
 
 		img {
+			width: 100%;
+			height: auto;
 			display: inline-block;
-			width: 400px;
+			// width: 400px;
 			padding-top: 80px;
 			margin-right: 15px;
 			padding-bottom: 80px;
@@ -225,7 +227,7 @@ body {
 				padding: 4px 12px;
 				border: $border-gold;
 				background-color: #fff;
-				width: 118px;
+				min-width: 118px;
 				transition: all .3s ease;
 				margin: 0 auto;
 			}
