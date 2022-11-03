@@ -257,8 +257,14 @@ body {
 
 	}
 	
+
+	.icon-fb {
+		transform: translateY(2px);
+	}
+
 	&-tw {
 		font-size: 14px;
+		transform: translateY(1px);
 	}
 
 	&-google {
@@ -272,10 +278,6 @@ body {
 
 
 
-
-
-
-	
 	.fb-hover a:hover {
 		border: 2px solid #3b5998;
 		color:  #3b5998;

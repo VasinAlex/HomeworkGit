@@ -214,8 +214,12 @@ body {
   font-size: 12px;
   color: #ccc;
 }
+.icon .icon-fb {
+  transform: translateY(2px);
+}
 .icon-tw {
   font-size: 14px;
+  transform: translateY(1px);
 }
 .icon-google {
   transform: scale(1.5) translate(-1px, 1.5px);
