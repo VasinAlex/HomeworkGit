@@ -222,7 +222,7 @@ body {
   transform: translateY(1px);
 }
 .icon-google {
-  transform: scale(1.5) translate(-1px, 1.5px);
+  transform: scale(1.5) translate(-1px, 0.5px);
 }
 .icon-in {
   font-size: 13px;
