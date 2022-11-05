@@ -88,6 +88,7 @@ body {
 }
 
 body {
+  background: url("../images/bg-picture.png") right 0 top 153px no-repeat fixed;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -204,10 +205,6 @@ header .flex {
 main {
   width: 785px;
   padding-top: 180px;
-}
-
-main {
-  background: url("../images/bg-picture.png") 1044px 153px no-repeat fixed;
 }
 
 aside {
