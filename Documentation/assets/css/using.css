@@ -228,7 +228,6 @@ img {
   height: 180px;
   position: relative;
   perspective: 1000px;
-  overflow: hidden;
 }
 .flip__wrap:hover .flip {
   transform: rotateX(180deg);
@@ -236,7 +235,7 @@ img {
 .flip__wrap .flip {
   width: 100%;
   height: 100%;
-  transition: all 0.8s ease;
+  transition: all 2.8s ease;
   transform-style: preserve-3d;
 }
 .flip__wrap .flip__front {
