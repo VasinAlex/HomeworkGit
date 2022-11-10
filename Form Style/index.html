@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="assets/Plagins/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="assets/Plagins/formstyler/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<title>Forms Style</title>
+</head>
+
+<body>
+	
+<div class="wrapper">
+
+	<div class="container flex">
+
+		<div class="create-acaunt form-block">
+			
+			<fieldset>
+				<legend>Create an Account</legend>
+					<form action="#" method="post">
+			
+						<div class="grid">
+							<div class="form__row">
+								<label for="firstname">First Name</label>
+								<input type="text" name="firstname" id="firstname">
+							</div>
+				
+							<div class="form__row">
+								<label for="lastname">Last Name</label>
+								<input type="text" name="lastname" id="lastname">
+							</div>
+						</div>
+				
+						<div class="form__row">
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email">
+							<span class="caption-input">We'll never share your email with anyone else.</span>
+						</div>
+			
+						<div class="form__row">
+							<label class="radio"><input id="gender" checked type="radio" name="gender" value="male">Male</label>
+							<label><input type="radio" name="gender" value="female">Female</label>
+						</div>
+
+						<div class="grid">
+							<div class="form__row">
+								<label for="country" class="arrow-top">Country</label>
+								<select name="country" id="country" >
+									<option>Select</option>
+									<option value="">Ukraine</option>
+									<option value="">Austria</option>
+									<option value="">Netherlands</option>
+								</select>
+							</div>
+						
+							<div class="form__row">
+								<label for="city">City</label>
+								<input type="text" name="city" id="city">
+							</div>
+						</div>
+
+
+						<div class="form__row border-b">
+							<div class="btn__wrap ">
+								<button class="btn" type="button">Sign Up</button>
+							</div>
+
+							<div class="btn__subtitle">
+								<span>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a>
+									and <a href="#"> Privacy Policy</a>.</span>
+							</div>
+						</div>
+
+						<div class="login__wrap">
+							<span>Have an account?</span>
+							<a href="#">Log In</a>
+						</div>
+
+					</form>
+			</fieldset>
+		</div>
+
+
+		<div class="profile form-block">
+			<fieldset>
+				<legend>Profile</legend>
+					<form action="#" method="post" enctype="multipart/form-data">
+
+
+						<div class="flex">
+							<div class="user-foto">
+								<img src="assets/images/Image.jpg" alt="User-foto">
+							</div>
+	
+							<div class="form__row file">
+								
+							
+									<input type="file" name="file" id="file">
+									<label for="file">Up to 1 MB (300x300 px)</label>
+								
+								<svg class="icon-foto" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M3.78001 1.33333L5.00001 0H9.00001L10.22 1.33333H12.3333C13.0667 1.33333 13.6667 1.93333 13.6667 2.66667V10.6667C13.6667 11.4 13.0667 12 12.3333 12H1.66668C0.933344 12 0.333344 11.4 0.333344 10.6667V2.66667C0.333344 1.93333 0.933344 1.33333 1.66668 1.33333H3.78001ZM3.66668 6.66667C3.66668 8.50667 5.16001 10 7.00001 10C8.84001 10 10.3333 8.50667 10.3333 6.66667C10.3333 4.82667 8.84001 3.33333 7.00001 3.33333C5.16001 3.33333 3.66668 4.82667 3.66668 6.66667ZM7.00001 8.8C8.17822 8.8 9.13334 7.84487 9.13334 6.66667C9.13334 5.48846 8.17822 4.53333 7.00001 4.53333C5.8218 4.53333 4.86668 5.48846 4.86668 6.66667C4.86668 7.84487 5.8218 8.8 7.00001 8.8Z" fill="#969696"/>
+								</svg>
+								
+								
+							</div>
+	
+							<div class="form__row">
+								<div class="reset-wrap"><input type="reset" class="reset"></div>
+								<svg class="icon-reset" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667V0.666667Z" fill="#969696"/>
+								</svg>
+							</div>
+						</div>
+
+						<div class="grid">
+
+							<div class="form__row">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name">
+							</div>
+					
+			
+							<div class="form__row">
+								<label for="email2">E-mail</label>
+								<input type="email" name="email" id="email2">
+							</div>
+
+
+							<div class="form__row country">
+								<label for="country2" class="arrow-top">Country</label>
+								<select name="country" id="country2">
+									<option>Select</option>
+									<option value="">Ukraine</option>
+									<option value="">Austria</option>
+									<option value="">Netherlands</option>
+								</select>
+							</div>
+					
+							<div class="form__row city">
+								<label for="city2">City</label>
+								<input type="text" name="city" id="city2">
+							</div>
+
+							<div class="form__row">
+								<label for="zipcode">Zip Code</label>
+								<input type="number" name="zipcode" id="zipcode">
+							</div>
+					
+			
+							<div class="form__row">
+								<label for="tel">Phone Number</label>
+								<input type="tel" name="tel" id="tel">
+							</div>
+
+						</div>
+
+						<div class="btn__wrap">
+							<button class="btn" type="submit">Update</button>
+						</div>
+
+					</form>
+			</fieldset>
+		</div>
+
+		
+	</div>
+</div>
+
+
+
+	<script src="assets/js/jquery-3.6.1.min.js"></script>
+	<script src="assets/Plagins/formstyler/jquery.formstyler.min.js"></script>
+	<script>
+	(function($) {
+$(function() {
+
+	$('input, select').styler();
+
+});
+})(jQuery);
+</script>
+</body>
+
+</html>
