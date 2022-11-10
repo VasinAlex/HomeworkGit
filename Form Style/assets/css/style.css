@@ -464,7 +464,7 @@ select {
   height: 100%;
   border: 1px solid #969696;
   border-bottom-color: #969696;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: none;
 }
 .jq-number__field input {
@@ -479,7 +479,6 @@ select {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.2px;
-  color: #969696;
 }
 .jq-number__spin.minus, .jq-number__spin.plus {
   display: none;
