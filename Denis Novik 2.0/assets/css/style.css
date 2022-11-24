@@ -1,314 +1,368 @@
+@font-face {
+  font-family: "Gilroy-M";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-B";
+  src: local("Gilroy-Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	color: #070707;
+  color: #070707;
 }
 
 html,
 body {
-	width: 100%;
-	height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
 body {
-	background-color: #fff;
-	font-family: 'Gilroy-B';
-	color: black;
-	font-size: 18px;
-	line-height: 24.5px;
-
+  background-color: #fff;
+  font-family: "Gilroy-B";
+  color: black;
+  font-size: 18px;
+  line-height: 24.5px;
 }
 
 .gilroy-m {
-	font-family: 'Gilroy-M';
+  font-family: "Gilroy-M";
 }
 
 .flex {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1000;
+  width: 375px;
+  height: 100vh;
+  transform: translateX(-375px);
+  transition: all 0.4s ease;
+  padding-top: 35px;
+}
+#mobile-menu .exit {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 66px;
+  right: 28px;
+  z-index: 1001;
+  border: none;
+  background: #fff;
+}
+#mobile-menu .exit img {
+  width: 100%;
+}
+#mobile-menu .language {
+  position: absolute;
+  top: 815px;
+  right: -182px;
+  font-size: 34px;
+  line-height: 42px;
+  transform: rotate(90deg);
+}
+
+#mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu ul {
+  width: 250px;
+}
+
+.mobile-menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 24px 0 25px 26px;
+  font-size: 34px;
+  line-height: 42px;
+  color: #828282;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+.mobile-menu ul li a:hover {
+  color: #090909;
 }
 
 /* ------------Header-------------------- */
 .container {
-	width: 90%;
-	max-width: 943.5px;
-	margin: 0 auto;
+  width: 90%;
+  max-width: 943.5px;
+  margin: 0 auto;
 }
 
 header {
-	height: 91px;
-	line-height: 93px;
+  height: 91px;
+  line-height: 93px;
 }
 
 #header .container {
-
-	border-bottom: 1px solid #828282;
-}
-
-.maine-menu {
-	font-size: 18px;
+  border-bottom: 1px solid #828282;
 }
 
 .maine-menu ul li a {
-	text-decoration: none;
-	color: #828282;
+  display: inline-block;
+  height: 100%;
+  text-decoration: none;
+  color: #828282;
 }
 
 .maine-menu ul li a:hover {
-	color: #070707;
+  color: #070707;
 }
 
 /* -----------Novik------------------- */
-
 .novik-content .data {
-	margin-left: -5px;
-	margin-top: 96px;
+  margin-left: -5px;
+  margin-top: 96px;
 }
 
 .novik h1 {
-	width: 123px;
-	font-weight: 700;
-	font-size: 47.3392px;
-	line-height: 58px;
-	color: #070707;
-	margin-top: 34px;
-	margin-bottom: 41px;
+  width: 123px;
+  font-weight: 700;
+  font-size: 47.3392px;
+  line-height: 58px;
+  color: #070707;
+  margin-top: 34px;
+  margin-bottom: 41px;
 }
 
-
 .icon-star {
-	font-family: 'icomoon' !important;
-	font-size: 50px;
+  font-family: "icomoon" !important;
+  font-size: 50px;
 }
 
 .data {
-	width: 156px;
-	font-size: 18px;
-	line-height: 22px;
+  width: 156px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
+.hamb {
+  display: none;
+}
 
 .language li:first-child {
-	color: #828282;
+  color: #828282;
 }
 
 .language li {
-	display: inline-block;
+  display: inline-block;
 }
 
 .language {
-	display: inline-block;
-	position: relative;
-	top: 10px;
-	left: 107px;
-	font-size: 16px;
-	line-height: 20px;
-	transform: rotate(-90deg);
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 107px;
+  font-size: 16px;
+  line-height: 20px;
+  transform: rotate(-90deg);
 }
 
 img {
-	vertical-align: top;
-	max-width: 100%;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.novik-vertical {
+  margin: 0 auto;
+  display: none;
 }
 
 .novik-image img {
-	padding-bottom: 104px;
+  padding-bottom: 104px;
+  text-align: center;
 }
 
 section.novik {
-	text-align: start;
-	padding: 0;
+  text-align: start;
+  padding: 0;
 }
 
 /* ----------------About------------------- */
 .bg-gray {
-	background: #F6F6F6;
+  background: #F6F6F6;
 }
 
 section {
-	text-align: center;
+  text-align: center;
 }
 
-.about .container {
-	max-width: 480px;
-	padding-bottom: 107px;
+.wrap-about {
+  max-width: 480px;
+  padding-bottom: 107px;
+  margin: 0 auto;
 }
 
 .about .section-title {
-	padding-top: 112px;
-	margin-bottom: 20px;
+  padding-top: 112px;
+  margin-bottom: 20px;
 }
 
 .section-title {
-	text-align: center;
-	font-weight: 700;
-	font-size: 34px;
-	line-height: 46px;
-	text-align: center;
-	color: #070707;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  color: #070707;
 }
 
-
 .content {
-	text-align: center;
-
+  text-align: center;
 }
 
 .content p {
-	line-height: 22px;
-	margin-bottom: 44px;
+  line-height: 22px;
+  margin-bottom: 44px;
 }
 
 .content *:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-
 /* -----------------Skills------------------------ */
-.skills .container {
-	max-width: 936.5px;
+.wrap-skills {
+  max-width: 936.5px;
 }
 
 .skills .section-title {
-	padding-top: 85px;
-	padding-bottom: 53px;
+  padding-top: 85px;
+  padding-bottom: 53px;
 }
 
 .skills-list {
-	padding-top: 87px;
-	padding-bottom: 114px;
+  padding-top: 87px;
+  padding-bottom: 114px;
 }
 
 .skills-list li {
-
-
-
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: center;
-	color: #828282;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
 }
 
-
 .img-skills {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .skill-title {
-	width: 95px;
-	height: 38px;
-	margin: 0 auto 34px;
+  width: 95px;
+  height: 38px;
+  margin: 0 auto 34px;
 }
 
 .stars {
-	width: 163.5px;
+  width: 163.5px;
 }
 
 .icon-star {
-	font-size: 20px;
-	color: #070707;
+  font-size: 20px;
+  color: #070707;
 }
 
 .opacity-star {
-	opacity: 0.1;
+  opacity: 0.2;
 }
 
 /* ----------------Portfolio------------- */
-
 .portfolio h2 {
-	margin-bottom: 50px;
-	padding-top: 106px;
+  margin-bottom: 50px;
+  padding-top: 106px;
 }
 
 .portfolio li {
-	margin-bottom: 102px;
+  margin-bottom: 102px;
 }
 
 .portfolio li:last-child {
-	padding-bottom: 95px;
+  padding-bottom: 95px;
 }
 
 .portfolio img {
-	margin-bottom: 41px;
+  margin-bottom: 41px;
 }
-
-
 
 /* -----------------Contacts------------------------ */
 .contacts .section-title {
-	padding-top: 5px;
+  padding-top: 5px;
 }
 
 .contacts p {
-	font-family: 'Gilroy-M';
-	width: 280px;
-	margin: 23px auto 0;
-	font-size: 18px;
-	line-height: 22px;
-	text-align: center;
+  font-family: "Gilroy-M";
+  max-width: 280px;
+  margin: 23px auto 0;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 }
 
-
 .button-wrap {
-	margin: 31px 0 85px;
+  margin: 31px 0 85px;
 }
 
 .btn {
-	font-family: 'Gilroy-B';
-	display: inline-block;
-	height: 44px;
-	line-height: 35px;
-	background: #070707;
-	color: #fff;
-	font-weight: 700;
-	font-size: 18px;
-
-	border: 2px solid #070707;
-	border-radius: 22px;
-	padding: 0 28px;
-	transition: all 0.2s ease;
+  font-family: "Gilroy-B";
+  display: inline-block;
+  height: 44px;
+  line-height: 35px;
+  background: #070707;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #070707;
+  border-radius: 22px;
+  padding: 0 28px;
+  transition: all 0.2s ease;
 }
 
 .btn:hover {
-	background-color: #fff;
-	color: #070707;
-	cursor: pointer;
+  background-color: #fff;
+  color: #070707;
+  cursor: pointer;
 }
 
 .btn:active {
-	background-color: #070707;
-	color: #fff;
+  background-color: #070707;
+  color: #fff;
 }
 
-
-
 .contacts-media {
-	margin-top: 30px;
-	margin: 0 auto;
-	width: 343px;
-	margin-bottom: 41px;
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 343px;
+  margin-bottom: 41px;
 }
 
 .likemeon {
-	font-weight: 400;
-
-	text-align: center;
-	color: #828282;
-	font-size: 14px;
-	line-height: 17px;
-	padding-bottom: 123px;
+  font-weight: 400;
+  text-align: center;
+  color: #828282;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 123px;
 }
-
-/* ------------------------------- */

@@ -54,7 +54,11 @@ img {
 
 }
 
-header {
+#header {
+	// position: fixed;
+	// width: 100%;
+	// backdrop-filter: blur(4px); 
+
 	height: 80px;
 	line-height: 80;
 	border-bottom: 1px solid #EFEEF3;

@@ -162,7 +162,7 @@ img {
   margin: 0 auto;
 }
 
-header {
+#header {
   height: 80px;
   line-height: 80;
   border-bottom: 1px solid #EFEEF3;

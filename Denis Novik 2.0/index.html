@@ -14,15 +14,34 @@
 </head>
 
 <body>
+	<div id="mobile-menu">
+		<button type="button" class="exit"  onclick="toggleMenu()">
+			<img src="assets/images/exit.svg" alt="exit">
+		</button>
+		<nav class="mobile-menu">
+			<ul class="nav-list" onclick="toggleMenu()">
+				<li ><a href="#home">Home</a></li>
+				<li><a href="#about-me">About me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contacts"> Contacts</a></li>
+			</ul>
+		</nav>
+		<ul class="language">
+			<li>RU </li>
+			<li> | ENG</li>
+		</ul>
+	</div>
 	<header id="header">
 		<div class="container">
+
 			<nav class="maine-menu">
-				<ul class="flex">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#"> Contacts</a></li>
+				<ul class="nav-list flex">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about-me">About me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contacts"> Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -34,13 +53,16 @@
 		<!--Denis Novik-->
 
 		<div class="container">
-			<section class="novik ">
+			<section id="home" class="novik ">
+				<div class="wrap-hamb">
+					<button type="button" class="hamb" onclick="toggleMenu()">
+						<img src="assets/images/hamb.svg" alt="hamb">
+					</button>
+				</div>
 
-
-				
 				<div class="novik-content flex">
 					<h1>Denis Novik</h1>
-					
+
 					<div class="data gilroy-m">UX | UI designer 24&nbsp;years old, Minsk</div>
 					<ul class="language">
 						<li>RU </li>
@@ -48,108 +70,114 @@
 					</ul>
 				</div>
 				<div class="novik-image">
-					<img src="assets/images/photox970-2.jpg" alt="DN">
+					<img class="novik-gorizont" src="assets/images/photox970-2.jpg" alt="DN">
+					<img class="novik-vertical" src="assets/images/BSPP2266.jpg" alt="Foto">
 				</div>
 			</section>
 		</div>
 
 		<!--About-me-->
 
-		<section class="about bg-gray">
+		<section id="about-me" class="about bg-gray">
 			<div class="container">
-				<h2 class="section-title">About me</h2>
-				<div class="content gilroy-m">
-					<p>Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.
-					</p>
-					<p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-					</p>
-					<p>Ready to implement excellent projects<br>with wonderful people.
-					</p>
+				<div class="wrap-about">
+					<h2 class="section-title">About me</h2>
+					<div class="content gilroy-m">
+						<p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+						</p>
+						<p>I'm studying at courses "Web&nbsp;and&nbsp;mobile design interfaces" in&nbsp;IT-Academy.
+						</p>
+						<p>Ready to implement excellent projects<br>with wonderful people.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!--Skills-->
 
-		<section class="skills">
+		<section id="skills" class="skills">
 			<div class="container">
-				<h2 class="section-title">Skills</h2>
-				<span class="gilroy-m">I work in such programs as</span>
-
-				<ul class="skills-list flex">
-					<li>
-						<div class="img-skills">
-							<img src="assets/images/ps.svg" alt="">
-						</div>
-						<div class="skill-title">
-							Adobe Photoshop
-							
-						</div>
-
-						<div class="stars flex">
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star opacity-star"></span>
-						</div>
-					</li>
-					<li>
-						<div class="img-skills">
-							<img src="assets/images/ai.svg" alt="">
-						</div>
-						<div class="skill-title">
-							Adobe Illustrator
-						</div>
-
-						<div class="stars flex">
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star opacity-star"></span>
-							<span class="icon-star opacity-star"></span>
-						</div>
-					</li>
-					<li>
-						<div class="img-skills">
-							<img src="assets/images/ae.svg" alt="">
-						</div>
-						<div class="skill-title">
-							Adobe After&nbsp;Effects
-						</div>
-
-						<div class="stars flex">
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star opacity-star"></span>
-						</div>
-					</li>
-					<li>
-						<div class="img-skills">
-							<img src="assets/images/figma.svg" alt="">
-						</div>
-						<div class="skill-title">
-							Figma
-						</div>
-
-						<div class="stars flex">
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star"></span>
-							<span class="icon-star opacity-star"></span>
-						</div>
-					</li>
-				</ul>
+				
+				<div class="wrap-skills">
+						<h2 class="section-title">Skills</h2>
+						<span class="gilroy-m">I work in such programs as</span>
+	
+						<ul class="skills-list flex">
+							<li>
+								<div class="img-skills">
+									<img src="assets/images/ps.svg" alt="">
+								</div>
+								<div class="skill-title">
+									Adobe Photoshop
+									
+								</div>
+	
+								<div class="stars flex">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star opacity-star"></span>
+								</div>
+							</li>
+							<li>
+								<div class="img-skills">
+									<img src="assets/images/ai.svg" alt="">
+								</div>
+								<div class="skill-title">
+									Adobe Illustrator
+								</div>
+	
+								<div class="stars flex">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star opacity-star"></span>
+									<span class="icon-star opacity-star"></span>
+								</div>
+							</li>
+							<li>
+								<div class="img-skills">
+									<img src="assets/images/ae.svg" alt="">
+								</div>
+								<div class="skill-title">
+									Adobe After&nbsp;Effects
+								</div>
+	
+								<div class="stars flex">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star opacity-star"></span>
+								</div>
+							</li>
+							<li>
+								<div class="img-skills">
+									<img src="assets/images/figma.svg" alt="">
+								</div>
+								<div class="skill-title">
+									Figma
+								</div>
+	
+								<div class="stars flex">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star opacity-star"></span>
+								</div>
+							</li>
+						</ul>
+				</div>
 			</div>
 		</section>
 
 		<!--Portfolio-->
 
 
-		<section class="portfolio bg-gray">
+		<section id="portfolio" class="portfolio bg-gray">
 			<div class="container">
 				<h2 class="section-title">Portfolio</h2>
 
@@ -186,47 +214,54 @@
 
 	<footer class="footer">
 
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="container">
-				<h2 class="section-title">Contacts</h2>
-				<p>Want to know more or just chat?&nbsp; You are welcome!</p>
-
-
-				<div class="button-wrap">
-					<button type="button" class="btn">Send message</button>
-				</div>
-
-
-				<ul class="contacts-media flex">
-					<li>
-						<a href="#" target="_blank">
-							<img src="assets/icon/linkedin.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">
-							<img src="assets/icon/instagram.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">
-							<img src="assets/icon/behance.png" alt="">
-						</a>
-					</li>
-					<li>
-						<a href="#" target="_blank">
-							<img src="assets/icon/dribbble.png" alt="">
-						</a>
-					</li>
-				</ul>
-
-				<div class="likemeon gilroy-m">
-					Like me on<br>LinkedIn, Instagram, Behance, Dribble
+				<div class="wrap-contacts">
+					<h2 class="section-title">Contacts</h2>
+					<p>Want to know more or just chat?&nbsp; You are welcome!</p>
+	
+	
+					<div class="button-wrap">
+						<button type="button" class="btn">Send message</button>
+					</div>
+	
+	
+					<ul class="contacts-media flex">
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/icon/linkedin.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/icon/instagram.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/icon/behance.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<img src="assets/icon/dribbble.png" alt="">
+							</a>
+						</li>
+					</ul>
+	
+					<div class="likemeon gilroy-m">
+						Like me on<br>LinkedIn, Instagram, Behance, Dribble
+					</div>
 				</div>
 			</div>
 		</section>
 
 	</footer>
+	<script>
+		function toggleMenu(){
+		document.getElementById("mobile-menu").classList.toggle("open")
+		}
+	</script>
 </body>
 
 </html>

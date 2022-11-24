@@ -22,6 +22,30 @@
   src: local(""), url("../fonts/inter/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter/inter-v12-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 800px;
+  }
+  .container.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .container {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -69,18 +93,39 @@ body {
   gap: 12px;
 }
 
+.btn {
+  width: 100%;
+  height: 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+  background: #007BFF;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 22px;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background: #0061c9;
+}
+.btn:active {
+  background: #007BFF;
+}
+
 .form-block {
   width: 570px;
   height: 590px;
   background-color: #fff;
   margin-top: 45px;
-  margin-bottom: 65px;
-}
-.form-block fieldset {
   padding: 0 35px;
-  border: none;
+  padding-bottom: 65px;
 }
-.form-block fieldset legend {
+.form-block .legend {
   padding: 35px 0 20px;
   font-weight: 500;
   font-size: 24px;
@@ -102,19 +147,6 @@ body {
   line-height: 18px;
   letter-spacing: -0.1px;
   color: #969696;
-}
-.form-block .form__row .btn {
-  width: 100%;
-  height: 38px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.1px;
-  color: #FFFFFF;
-  background-color: #007BFF;
 }
 
 input[type=text],
@@ -280,23 +312,6 @@ select {
 .jq-selectbox li:hover {
   background-color: #007BFF;
   color: #FFF;
-}
-
-.btn {
-  width: 100%;
-  height: 38px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.1px;
-  color: #FFFFFF;
-  background: #007BFF;
-  border: none;
-  border-radius: 6px;
-  margin-bottom: 22px;
 }
 
 .btn__subtitle {

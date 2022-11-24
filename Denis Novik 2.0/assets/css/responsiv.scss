@@ -1,0 +1,147 @@
+@media screen and (max-width: 860px) {
+	.skills-list {
+		flex-wrap: wrap;
+		gap: 40px;
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+	
+	}
+	
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 700px;
+	}
+	.wrap-skills {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.skills-list {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 60px;
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto;
+	
+	}
+	.likemeon {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}	
+
+
+
+
+@media screen and (max-width: 480px) {
+	.container {
+		max-width: 416px;
+	}
+	#header {
+		display: none;
+	}
+	.novik-content {
+		display: block;
+		.language {
+			display: none;
+		}
+	}
+
+	.wrap-hamb {
+		position: relative;
+	}
+	.hamb {
+	
+		display: block;
+		position: fixed;
+		right: 31px;
+    top: 77px;
+		border:none;
+		background: transparent;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+
+	.novik-gorizont {
+		display: none;
+	}
+	.novik-vertical {
+		padding-top: 37px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.novik-content .data {
+		margin-left: 1px;
+    margin-top: 20px;
+	}
+	
+	.novik h1 {
+		width: 123px;
+		font-weight: 700;
+		font-size: 47.3392px;
+		line-height: 58px;
+		margin-top: 65px;
+		margin-bottom: 0px;
+	}
+
+
+	.novik-image img {
+    padding-bottom: 83px;
+    text-align: center;
+}
+	.button-wrap {
+		margin: 40px 0 48px;
+		.btn {
+			width: 100%;
+	 }
+	}
+
+	.wrap-about {
+		padding-bottom: 76px;
+	}
+	
+	.about .section-title {
+		padding-top: 74px;
+		
+    margin-bottom: 33px;
+	}
+	.skills-list {
+    padding-top: 85px;
+    padding-bottom: 99px;
+	}
+	.portfolio li {
+    margin-bottom: 78px;
+		&:last-child {
+			padding-bottom: 81px;
+	}
+	}
+	.contacts-media {
+		margin-top: 48px;
+		margin-bottom: 49px;
+	}
+	
+	.likemeon {
+		padding-bottom: 90px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 375px) {
+	.container {
+		max-width: 320px;
+	}
+
+	
+}
