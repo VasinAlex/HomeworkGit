@@ -96,6 +96,8 @@ img {
 		width: 100%;
 		vertical-align: middle;
 	}
+
+
 	.nav-list {
 		display: flex;
 		gap: 38px;
@@ -105,7 +107,7 @@ img {
 		&__item::after {
 			content: '';
 			display: block;
-			margin: -42px auto 0;
+			margin: -2px auto 0;
 			border-bottom:1px solid #000000;
 			width: 0px;
 			position: relative;
@@ -117,7 +119,7 @@ img {
 		&__item:hover::after {
 			content: '';
 			display: block;
-			margin: -42px auto 0;
+			margin: -2px auto 0;
 			border-bottom:1px solid #000000;
 			width: 40px;
 			position: relative;
@@ -125,6 +127,9 @@ img {
 			left: -2px;
 			opacity: 1;
 		}
+	}
+	.nav-list__item  {
+		height: 100%;
 	}
 	.nav-list__item a {
 		display: inline-block;

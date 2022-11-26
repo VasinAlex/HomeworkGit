@@ -130,7 +130,7 @@ img {
 #header .nav-list__item::after {
   content: "";
   display: block;
-  margin: -42px auto 0;
+  margin: -2px auto 0;
   border-bottom: 1px solid #000000;
   width: 0px;
   position: relative;
@@ -142,13 +142,16 @@ img {
 #header .nav-list__item:hover::after {
   content: "";
   display: block;
-  margin: -42px auto 0;
+  margin: -2px auto 0;
   border-bottom: 1px solid #000000;
   width: 40px;
   position: relative;
   top: 3px;
   left: -2px;
   opacity: 1;
+}
+#header .nav-list__item {
+  height: 100%;
 }
 #header .nav-list__item a {
   display: inline-block;

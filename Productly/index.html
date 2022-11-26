@@ -12,42 +12,71 @@
 	<link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 	<link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
-
+	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/response.min.css">
 	<title>Productly</title>
 </head>
 
 <body>
 
+	<button id="hamb-btn" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+
+	<div id="mobile-menu" onclick="toggleMenu()">
+		<nav class="menu__list menu" >
+			<ul>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Product</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Customers</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Pricing</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">Resources</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="shadow" onclick="toggleMenu()"></div>
+
 	<div class="page-wrapper">
 		<header class="header">
 
-			<div class="container flex">
+			<div class="container">
+				<div class="flex">
+					<div class="header__logo logo">
+						<img class="logo__image" src="assets/images/Logo.png" alt="logo">
+					</div>
 
-				<div class="header__logo logo">
-					<img class="logo__image" src="assets/images/Logo.png" alt="logo">
-				</div>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#">Product</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">Customers</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">Pricing</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">Resources</a>
+							</li>
+						</ul>
+					</nav>
 
-				<nav class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a class="menu__link" href="#">Product</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Customers</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Pricing</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">Resources</a>
-						</li>
-					</ul>
-				</nav>
-
-				<div class="header__button button">
-					<button class="btn-white" type="button">Sign In</button>
-					<button class="btn-orang" type="button">Sign Up</button>
+					<div class="header__button button">
+						<button class="btn-white" type="button">Sign In</button>
+						<button class="btn-orang" type="button">Sign Up</button>
+					</div>
 				</div>
 			</div>
 
@@ -60,22 +89,23 @@
 
 			<section class="first-section item-section">
 
-				<div class="container flex">
+				<div class="container">
+					<div class="flex">
+						<div class="item-section__content">
+							<h1 class="item-section__title">The Design Thinking superpowers</h1>
 
-					<div class="item-section__content">
-						<h1 class="item-section__title">The Design Thinking superpowers</h1>
-
-						<div class="item-section__text">
-							Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
-							your
-							next user experience.
+							<div class="item-section__text">
+								Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
+								your
+								next user experience.
+							</div>
+							<div class="item-section__button">
+								<button class="btn-orang" type="button">Get started</button>
+							</div>
 						</div>
-						<div class="item-section__button">
-							<button class="btn-orang" type="button">Get started</button>
+						<div class="item-section__image">
+							<img src="assets/images/Image1.png" alt="image">
 						</div>
-					</div>
-					<div class="item-section__image">
-						<img src="assets/images/Image1.png" alt="image">
 					</div>
 				</div>
 			</section>
@@ -127,69 +157,82 @@
 		<!-- Footer  -->
 
 		<footer class="footer">
-			<div class="container flex">
+			<div class="container">
 
-				<div class="footer__logo logo">
-					<img class="logo__image" src="assets/images/Logo.png" alt="logo">
-				</div>
-
-				<div class="quick-links fb-nav">
-					<div class="footer-title">Quick Links</div>
-					<nav class="footer__menu">
-
-						<ul class="footer-list">
-							<li>
-								<a href="#" class="menu__link">About Us</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">Blog</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">Contact</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">FAQ</a>
-							</li>
-						</ul>
-
-					</nav>
-				</div>
-
-				<div class="legal-stuff fb-nav">
-					<div class="footer-title">Legal Stuff</div>
-
-					<nav class="footer__menu">
-						<ul class="footer-list">
-							<li>
-								<a href="#" class="menu__link">Disclaimer</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">Financing</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">Privacy Policy</a>
-							</li>
-							<li>
-								<a href="#" class="menu__link">Terms of Service</a>
-							</li>
-						</ul>
-
-					</nav>
-				</div>
-
-				<div class="footer__form">
-					<form action="#" method="post">
-						<div class="footer-title">Knowing you're always on the best energy deal.</div>
-						<input class="input-tel" type="tel" name="phone" placeholder="Enter your phone Number">
-						<div class="footer__button">
-							<button class="btn-orang" type="submit">Sign up Now</button>
+				<div class="flex">
+					<div class="footer__logo logo">
+						<img class="logo__image" src="assets/images/Logo.png" alt="logo">
+					</div>
+	
+					<div class="wrap-footer__nav">
+						<div class="quick-links fb-nav">
+							<div class="footer-title">Quick Links</div>
+							<nav class="footer__menu">
+		
+								<ul class="footer-list">
+									<li>
+										<a href="#" class="menu__link">About Us</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">Blog</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">Contact</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">FAQ</a>
+									</li>
+								</ul>
+		
+							</nav>
 						</div>
-					</form>
+		
+						<div class="legal-stuff fb-nav">
+							<div class="footer-title">Legal Stuff</div>
+		
+							<nav class="footer__menu">
+								<ul class="footer-list">
+									<li>
+										<a href="#" class="menu__link">Disclaimer</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">Financing</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="#" class="menu__link">Terms of Service</a>
+									</li>
+								</ul>
+		
+							</nav>
+						</div>
+					</div>
+	
+					<div class="footer__form">
+						<form action="#" method="post">
+							<div class="footer-title">Knowing you're always on the best energy deal.</div>
+							<input class="input-tel" type="tel" name="phone" placeholder="Enter your phone Number">
+							<div class="footer__button">
+								<button class="btn-orang" type="submit">Sign up Now</button>
+							</div>
+						</form>
+					</div>
 				</div>
 
 			</div>
 		</footer>
 	</div>
+
+	<script>
+	function toggleMenu(){
+		document.getElementById("mobile-menu").classList.toggle("open")
+		document.getElementById("hamb-btn").classList.toggle("is-active")
+		document.getElementById("shadow").classList.toggle("show")
+	}
+
+	</script>
 </body>
 
 </html>
