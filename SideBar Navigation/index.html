@@ -5,21 +5,220 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SideBar Navigation</title>
+
   <link rel="stylesheet" href="assets/fonts/icon/style.css">
   <link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/response.min.css">
 </head>
-<body>
-	<header id="header">
-		<div class="container">
-			<div class="quick-panel panel">
+<body >
+
+	<div id="sidebar" >
+
+		<button type="button" class="btn" onclick="toggleSidebar()">
+		</button>
+			
+		<div class="lightboard">
+			<a href="#">
+				<div class="wrap-lightboard icon">
+					<img src="assets/images/lightBoard.svg" alt="icon">
+				</div>
+				<span class="subtitle light">LightBoard</span>
+			</a>
+		</div>
+
+		<div class="wrap-sidebar">
+
+			<div class="dashboard ">
+				<a href="#">
+					<span class="icon-dashboard icon"></span>
+					<span class="subtitle">Dashboard</span>
+				</a>
+			</div>
+				
+			<div class="apps wrap-section">
+				<div class="title">Apps</div>
+				<span class="dashed2"></span>
+		
+					<ul class="panel-list">
+						<li class="badge-email">
+							<a href="#">
+								<span class="icon-Email icon "></span>
+								<span class="subtitle">Email</span>
+							</a>
+						</li>
+						<li class="badge-chats">
+							<a href="#">
+								<span class="icon-Chat icon"></span>
+								<span class="subtitle">Chats</span>
+							</a>
+						</li>
+
+						<li class="badge-calendar">
+							<a href="#">
+								<span class="icon-header-colendar icon"></span>
+								<span class="subtitle ">Calendar</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-news icon"></span>
+								<span class="subtitle">News</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-Knowledge icon"></span> 
+								<span class="subtitle">Knowledge</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-File-manager icon"></span>
+								<span class="subtitle">File manager</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-Leaflet-Maps icon"></span>
+								<span class="subtitle">Leaflet Maps</span>
+							</a>
+						</li>
+					</ul>
+			</div>
+
+			
+			<div class="auth wrap-section">
+				<div class="title">Auth pages</div>
+				<span class="dashed2"></span>
+					<ul class="panel-list">
+						<li>
+							<a href="#" >
+								<span class="icon-Profile icon"></span> 
+								<span class="subtitle">Profile</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-Permissions icon"></span>
+								<span class="subtitle">Permissions</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<span class="icon-Log-Out icon"></span>
+								<span class="subtitle">Log Out</span>
+							</a>
+						</li>
+					</ul>
+			</div>
+		
+			<div class="user-interface wrap-section">
+			
+				<div class="title">User Interface</div>
+				<span class="dashed2"></span>
+
+										
+
 				<ul class="panel-list">
-					<li><a href="#" ><span class="icon-Email"></span></a></li>
-					<li><a href="#" ><span class="icon-Chats"></span> </a></li>
-					<li><a href="#" ><span class="icon-Calendar"></span></a></li>
-					<li><a href="#" ><span class="icon-Star"></span></a></li>
+					<li>
+						<a href="#">
+							<span class="icon-Feather icon"></span> 
+							<span class="subtitle">Feather</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon-Ecommerce icon"></span>
+							<span class="subtitle">Ecommerce</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon-Components icon"></span>
+							<span class="subtitle">Components</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" >
+							<span class="icon-Pages icon"></span>
+							<span class="subtitle">Pages</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" >
+							<span class="icon-Editor icon"></span>
+							<span class="subtitle">Editor</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
+	</div>
+
+	<header id="header" >
+		<div class="container">
+
+			<div class="quick-panel panel">
+				<ul class="panel-list">
+					<li><a href="#" ><span class="icon-Email icon"></span></a></li>
+					<li><a href="#" ><span class="icon-Chat icon"></span> </a></li>
+					<li><a href="#" ><span class="icon-header-colendar icon"></span></a></li>
+					<li><a href="#" ><span class="icon-headr-star icon"></span></a></li>
+				</ul>
+			</div>
+
+			<div class="quick-settings panel">
+
+				<div class="wrap-lang">
+					<a href="#" >
+						<img src="assets/images/lang-icon.svg" alt="Lang">
+						<span>English</span>
+				</a>
+				</div>
+
+				<ul class="panel-list">
+					<li><a href="#" ><span class="icon-lamp icon"></span></a></li>
+					<li><a href="#" ><span class="icon-search icon"></span></a></li>
+					<li><a href="#" ><span class="icon-settings icon"></span></a></li>
+				</ul>
+
+				<div class="wrap-user">
+					<img src="assets/images/profile-img.svg" alt="User">
+					<button type="button" class="mini-settings " onclick="settings()"></button>
+					
+				</div>
+				<span class="arrow-settings"></span>
+			</div>
+			<!-- <div class="button-wrap">
+				<button type="button" class="switch-theme" onclick="darkTheme()"	>
+					Dark
+				</button>
+			</div> -->
+		</div>
+		
 	</header>
+	
+	<main id="main">
+			<div class="container">
+				<div class="wrap-bg">
+					<img src="assets/images/bg.jpg" class="bg-light" alt="BG">
+				</div>
+				<!-- <div class="wrap-bg__dark">
+					<img src="assets/images/bg-dark.jpg" class="bg-dark" alt="BG-dark">
+				</div> -->
+			</div>
+	</main>
+<script>
+	function toggleSidebar(){
+		document.getElementById("sidebar").classList.toggle("open")
+	}
+	function darkTheme(){
+		document.body.classList.toggle("dark")
+		
+	}
+	function settings(){
+		document.getElementById("header").classList.toggle("all-settings")
+	}
+</script>
 </body>
 </html>
