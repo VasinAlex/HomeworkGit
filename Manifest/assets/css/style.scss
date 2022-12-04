@@ -96,8 +96,6 @@ img {
 		width: 100%;
 		vertical-align: middle;
 	}
-
-
 	.nav-list {
 		display: flex;
 		gap: 38px;
@@ -148,7 +146,6 @@ img {
 		padding-left: 80px;
 		display: flex;
 		align-items: center;
-		
 		a {
 			color: #000000;
 		}
@@ -160,7 +157,6 @@ img {
 	.wrap-nav {
 	display: flex;
 	}
-	
 	.wrap-hamb {
 		display: none;
 		height: 100%;
@@ -171,7 +167,6 @@ img {
 			height: 100%;
 			margin: 20px 0;	
 			margin-left: 10px;
-			
 		}
 	}
 }
@@ -204,7 +199,6 @@ main {
 	}
 }
 
-
 section {
 	margin-bottom:90px;
 }
@@ -223,7 +217,6 @@ section {
 		.wrap-columns__info {
 		padding-top: 8px;
 		}
-			
 }
 
 .wrap-columns {
@@ -235,14 +228,11 @@ section {
 			flex-direction: row-reverse;
 			justify-content: flex-end;
 			.wrap-info {
-				
 				display: flex;
 				justify-content: end;
 			}
 		}
 	}
-	
-
 	li:last-child {
 		padding-bottom: 0;
 	}
@@ -253,13 +243,11 @@ section {
 			height: 100%;
 		}
 	}
-
 	.wrap-info {
 		max-width: 570px;
 		
 		// margin-left: -3px;
 	}
-
 	&__info {
 		
 		justify-content: end;
@@ -269,8 +257,6 @@ section {
 .info {
 	align-self: center;
 	width: 100%;
-
-
 	&__title {
 		margin-top: -8px;
 		padding-bottom: 23px;
@@ -289,11 +275,9 @@ section {
 	&__text {
 		max-width: 448px;
 		padding-top: 49px;
-		
 		@extend .lato;
 		letter-spacing: 0.055em;
 		color: #565656;
-
 		.icon-arrow {
 			vertical-align: middle;
 			padding-left: 18px;
@@ -323,11 +307,9 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	.section__title {
-	
 		@extend .redhat;
 		font-weight: 600;
 		@include fz(28);
-
 	}
 	.icon-arrow {
 		padding-left: 14px;
@@ -337,7 +319,6 @@ section {
 		margin-top: -8px;
 	}
 }
-
 .posts .wrap-columns	{
 	display: flex;
 	gap: 30px;
@@ -349,7 +330,6 @@ section {
 		padding-bottom: 22px;
 	}
 }
-
 .posts .info {
 	&__text {
 		padding-top: 14px;
@@ -392,7 +372,6 @@ section {
 		max-width: 570px;
 		padding-top: 20px;
 	}
-
 	&__date {
 		display: flex;
 		justify-content: space-between;
@@ -429,7 +408,6 @@ section {
 		color: #fff;
 		vertical-align: middle;
 	}
-
 	&:hover {
 		background: #fff;
 		border: 1px solid #565656;
@@ -454,7 +432,6 @@ section {
 	align-items: flex-start;
 	@extend .redhat;
 	@include fz(23);
-
 	margin: 90px 0;
 	.icon-arrow {
 		font-size: 12px;
@@ -484,14 +461,12 @@ section {
 }
 .footer-wrap {
 	padding-top: 70px;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	span {
 		font-size: 24px;
 	}
-	
 }
 .contacts {
 	.contacts-phone,
@@ -541,7 +516,6 @@ section {
 		}
 	}
 }
-
 .copyright {
 	@extend .lato;
 	@include fz(12);

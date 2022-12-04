@@ -22,7 +22,7 @@
   src: local(""), url("../fonts/Montserrat/montserrat-v25-latin-700.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-v25-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-.montserrat, #sidebar .badge-email::after, #sidebar .badge-calendar::after, #sidebar .badge-chats::after, #sidebar .title, body {
+.montserrat, .badge::after, #sidebar .title, body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -86,7 +86,7 @@ img {
   border-radius: 10px;
 }
 #header .icon {
-  font-size: 18px;
+  font-size: 26px;
 }
 #header .panel {
   display: flex;
@@ -335,13 +335,14 @@ img {
   box-shadow: 0px 0px 20px rgba(102, 71, 255, 0.7);
 }
 
-#sidebar .badge-email, #sidebar .badge-calendar, #sidebar .badge-chats {
+.badge {
   position: relative;
-  top: 0;
-  right: 0;
+  top: 0px;
+  left: 0;
+  height: 100%;
 }
-#sidebar .badge-email::after, #sidebar .badge-calendar::after, #sidebar .badge-chats::after {
-  content: "10";
+.badge::after {
+  content: "";
   display: block;
   position: absolute;
   top: 5px;
@@ -351,39 +352,53 @@ img {
   font-size: 12px;
   line-height: 15px;
 }
-#sidebar .badge-email::before, #sidebar .badge-calendar::before, #sidebar .badge-chats::before {
+.badge::before {
   content: "";
   display: block;
   position: absolute;
   top: 2px;
   left: 34px;
-  background: #6FCF97;
   border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
-#sidebar .badge-chats::after {
-  color: #fff;
+.email::after {
+  content: "10";
 }
-#sidebar .badge-chats::before {
+.email::before {
+  content: "";
+  background: #6FCF97;
+}
+
+.chat::after {
+  content: "10";
+}
+.chat::before {
+  content: "";
   background: #EA5455;
 }
 
-#sidebar .badge-calendar::after {
-  content: "5";
-  top: 5px;
+.calendar::after {
   left: 40px;
+  content: "5";
 }
-#sidebar .badge-calendar::before {
+.calendar::before {
+  content: "";
   background: #F2C94C;
 }
 
 #sidebar.open {
   width: 86px;
 }
-#sidebar.open li, #sidebar.open .dashboard {
+#sidebar.open a span + span {
+  padding-right: 0;
+}
+#sidebar.open .wrap-sidebar li {
   padding: 0;
+}
+#sidebar.open li, #sidebar.open .dashboard {
+  text-align: center;
 }
 #sidebar.open a span + span {
   padding-left: 0;
@@ -409,17 +424,16 @@ img {
   right: 6px;
   transform: rotate(-45deg);
 }
-#sidebar.open .wrap-sidebar li {
-  padding: 0 15px;
-  text-align: center;
-}
-#sidebar.open .badge-calendar::after {
-  content: "10";
+#sidebar.open .badge::after {
   top: 5px;
-  left: 38px;
+  left: 50px;
 }
-#sidebar.open .badge-calendar::before {
-  background: #F2C94C;
+#sidebar.open .badge::before {
+  top: 2px;
+  left: 46px;
+}
+#sidebar.open .calendar::after {
+  content: "10";
 }
 
 .wrap-bg {

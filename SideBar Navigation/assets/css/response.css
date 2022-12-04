@@ -75,7 +75,7 @@
     width: 60px;
   }
   #sidebar.open .icon {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   #sidebar .wrap-sidebar {
@@ -93,6 +93,20 @@
   #sidebar.open .btn {
     right: -20px;
     top: 15px;
+  }
+  #sidebar.open li {
+    padding: 0;
+  }
+  #sidebar.open .badge::after {
+    top: 5px;
+    left: 38px;
+  }
+  #sidebar.open .badge::before {
+    top: 2px;
+    left: 34px;
+  }
+  #sidebar.open .calendar::after {
+    content: "10";
   }
 
   .lightboard {

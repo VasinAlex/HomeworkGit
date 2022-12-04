@@ -80,7 +80,7 @@ img {
 		border-radius: 10px;
 	}
 	.icon {
-		font-size: 18px;
+		font-size: 26px;
 	}
 
 	.panel {
@@ -236,7 +236,7 @@ img {
 		li, .dashboard {
 			padding: 0 15px;
 		}
-		a span + span {
+		a span + span{
 			padding-left: 16px;
 		}
 	
@@ -374,12 +374,13 @@ img {
 	}
 }
 
-#sidebar .badge-email {
+.badge {
 	position: relative;
-	top: 0;
-	right: 0;
+	top: 0px;
+	left: 0;
+	height: 100%;
 	&::after {
-		content: ('10');
+		content: ('');
 		display: block;
 		position: absolute;
 		top: 5px;
@@ -396,40 +397,52 @@ img {
 		position: absolute;
 		top: 2px;
 		left: 34px;
-		background: #6FCF97;
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
 	}
 }
 
-#sidebar .badge-chats {
-	@extend .badge-email;
-	&::after {
-		color: #fff;
+.email {
+		&::after {
+		content: ('10');
 	}
 	&::before {
+		content: ('');
+		background: #6FCF97;
+	}
+}
+.chat {
+		&::after {
+		content: ('10');
+	}
+	&::before {
+		content: ('');
 		background: #EA5455;
 	}
 }
-
-#sidebar .badge-calendar {
-	@extend .badge-email;
-	&::after {
+.calendar {
+		&::after {
+			left: 40px;
 		content: ('5');
-		top: 5px;
-    left: 40px;
 	}
 	&::before {
+		content: ('');
 		background: #F2C94C;
 	}
 }
 
 #sidebar.open {
 	width: 86px;
-
-	li, .dashboard {
+	a span + span{
+		padding-right: 0
+	}
+	.wrap-sidebar li {
 		padding: 0;
+	}
+	li, .dashboard {
+		// padding: 0;
+    text-align: center;
 	}
 	a span + span {
 		padding-left: 0;
@@ -456,21 +469,21 @@ img {
 			transform: rotate(-45deg);
 		}
 	}
-	.wrap-sidebar li {
-    padding: 0 15px;
-    text-align: center;
-	}
-	& .badge-calendar {
+	.badge {
 		&::after {
-			content: ('10');
 			top: 5px;
-			left: 38px;
+			left: 50px;
 		}
 		&::before {
-			background: #F2C94C;
+			top: 2px;
+			left: 46px;
 		}
 	}
-
+	.calendar {
+		&::after {
+		content: ('10');
+		}
+	}
 }
 //----Main-------
 .wrap-bg {

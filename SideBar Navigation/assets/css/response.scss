@@ -76,7 +76,7 @@
 		&.open {
 			width: 60px;
 			& .icon {
-				font-size: 18px;
+				font-size: 26px;
 			}
 		}
 	}
@@ -95,6 +95,25 @@
 		.btn {
 			right: -20px;
 			top: 15px;
+		}
+		li {
+			padding: 0;
+		}
+		.badge {
+			&::after {
+				top: 5px;
+				left: 38px;
+
+			}
+			&::before {
+				top: 2px;
+				left: 34px;
+			}
+		}
+		.calendar {
+			&::after {
+			content: ('10');
+			}
 		}
 	}
 	.lightboard {
