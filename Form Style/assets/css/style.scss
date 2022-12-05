@@ -17,8 +17,13 @@ ul, ol {
 
 a {
 	text-decoration: none;
-}
+	cursor: pointer;
 
+}
+button {
+	cursor: pointer;
+
+}
 html, body {
 	width: 100%;
 	height: 100%;
