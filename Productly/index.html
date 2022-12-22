@@ -8,18 +8,21 @@
 
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-
+	<link rel="stylesheet" href="assets/css/animation.css">
 	<link href="http://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 	<link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
 	<link rel="stylesheet" href="assets/css/hamburgers.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<link rel="stylesheet" href="assets/css/response.min.css">
+
 	<title>Productly</title>
 </head>
 
 <body>
-
 	<button id="hamb-btn" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
 		<span class="hamburger-box">
 			<span class="hamburger-inner"></span>
@@ -32,14 +35,14 @@
 				<li class="menu__item">
 					<a class="menu__link" href="#">Product</a>
 				</li>
-				<li class="menu__item">
+				<li class="menu__item ">
 					<a class="menu__link" href="#">Customers</a>
 				</li>
-				<li class="menu__item">
+				<li class="menu__item ">
 					<a class="menu__link" href="#">Pricing</a>
 				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="#">Resources</a>
+				<li class="menu__item ">
+					<a class="menu__link " href="#">Resources</a>
 				</li>
 			</ul>
 		</nav>
@@ -48,34 +51,37 @@
 	<div id="shadow" onclick="toggleMenu()"></div>
 
 	<div class="page-wrapper">
+
+    <!-- Header -->
+
 		<header class="header">
 
 			<div class="container">
 				<div class="flex">
 					<div class="header__logo logo">
-						<img class="logo__image" src="assets/images/Logo.png" alt="logo">
+						<img class="logo__image animate__animated animate__flip animate__delay-3s" src="assets/images/Logo.png" alt="logo">
 					</div>
 
 					<nav class="header__menu menu">
 						<ul class="menu__list">
-							<li class="menu__item">
-								<a class="menu__link" href="#">Product</a>
+							<li class="menu__item animate__animated animate__backInDown animate__delay-3-1s">
+								<a class="menu__link " href="#">Product</a>
 							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Customers</a>
+							<li class="menu__item animate__animated animate__backInDown animate__delay-3-2s">
+								<a class="menu__link " href="#">Customers</a>
 							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Pricing</a>
+							<li class="menu__item animate__animated animate__backInDown animate__delay-3-3s">
+								<a class="menu__link " href="#">Pricing</a>
 							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Resources</a>
+							<li class="menu__item animate__animated animate__backInDown animate__delay-3-4s">
+								<a class="menu__link " href="#">Resources</a>
 							</li>
 						</ul>
 					</nav>
 
-					<div class="header__button button">
-						<button class="btn-white" type="button">Sign In</button>
-						<button class="btn-orang" type="button">Sign Up</button>
+					<div class="header__button button ">
+						<button class="btn-white animate__animated  animate__rubberBand animate__delay-1s" type="button">Sign In</button>
+						<button class="btn-orang animate__animated animate__shakeX animate__delay-2s" type="button">Sign Up</button>
 					</div>
 				</div>
 			</div>
@@ -92,18 +98,18 @@
 				<div class="container">
 					<div class="flex">
 						<div class="item-section__content">
-							<h1 class="item-section__title">The Design Thinking superpowers</h1>
+							<h1 class="item-section__title animate__animated animate__fadeInLeftBig">The Design Thinking superpowers</h1>
 
-							<div class="item-section__text">
+							<div class="item-section__text animate__animated animate__backInLeft">
 								Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine
 								your
 								next user experience.
 							</div>
 							<div class="item-section__button">
-								<button class="btn-orang" type="button">Get started</button>
+								<button class="btn-orang animate__animated animate__rubberBand animate__delay-4-5s" type="button">Get started</button>
 							</div>
 						</div>
-						<div class="item-section__image">
+						<div class="item-section__image animate__animated animate__zoomIn">
 							<img src="assets/images/Image1.png" alt="image">
 						</div>
 					</div>
@@ -115,7 +121,7 @@
 			<section class="skills item-skills">
 				<div class="container">
 
-					<h2 class="item-skills__title">
+					<h2 class="item-skills__title animate__animated animate__fadeInUp">
 						We design tools to unveil your superpowers
 					</h2>
 

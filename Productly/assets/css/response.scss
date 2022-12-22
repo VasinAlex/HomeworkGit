@@ -107,8 +107,24 @@
 			width: 40px;
 		}
 	}
+
+
+
+	.logo__image.animate__animated {
+		animation-duration: 0s;
+	}
+	.item-section__button {
+		.animate__animated.animate__rubberBand {
+			-webkit-animation-delay: calc(1s * 3);
+  animation-delay: calc(1s * 3);
+  -webkit-animation-delay: calc(var(--animate-delay) * 3);
+  animation-delay: calc(var(--animate-delay) * 3);
+		}
+	}
+
+
 	.main {
-		padding-top: 30px;
+		padding-top: 90px;
 	}
 	.first-section {
 		position: relative;

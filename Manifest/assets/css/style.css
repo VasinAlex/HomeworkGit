@@ -115,10 +115,23 @@ img {
 #header .wrap-logo {
   width: 142px;
 }
+@keyframes translate {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 #header .wrap-logo img {
   object-fit: none;
   width: 100%;
   vertical-align: middle;
+  animation: translate 2s linear 2s 1;
+  transition: all 0.2s ease;
 }
 #header .nav-list {
   display: flex;
@@ -219,22 +232,15 @@ section {
   line-height: 64px;
   letter-spacing: 0.05em;
 }
-.blog .wrap-columns__info {
-  padding-top: 8px;
-}
 
 .wrap-columns li {
   display: flex;
+  align-items: center;
   gap: 32px;
   padding-bottom: 51px;
 }
-.wrap-columns li.revers {
+.wrap-columns li:nth-child(2n) {
   flex-direction: row-reverse;
-  justify-content: flex-end;
-}
-.wrap-columns li.revers .wrap-info {
-  display: flex;
-  justify-content: end;
 }
 .wrap-columns li:last-child {
   padding-bottom: 0;
@@ -266,7 +272,6 @@ section {
   font-size: 1.4375rem;
 }
 .info__text {
-  max-width: 448px;
   padding-top: 49px;
   letter-spacing: 0.055em;
   color: #565656;
@@ -302,11 +307,15 @@ section {
 .posts .wrap-columns li {
   display: flex;
   flex-basis: 370px;
+  aspect-ratio: 1.32;
   flex-direction: column;
   gap: 25px;
   padding-bottom: 22px;
 }
 
+.posts .info {
+  align-self: flex-start;
+}
 .posts .info__text {
   padding-top: 14px;
 }
@@ -317,6 +326,7 @@ section {
 .posts .info__date {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.75rem;
   padding-bottom: 25px;
 }
@@ -336,7 +346,6 @@ section {
 }
 
 .popular .info {
-  max-width: 570px;
   align-self: start;
 }
 .popular .info__text {
@@ -452,6 +461,15 @@ section {
 .footer-media {
   display: flex;
   gap: 23px;
+}
+.footer-media span {
+  font-size: 24px;
+}
+.footer-media .icon-in {
+  font-size: 26px;
+}
+.footer-media .icon-twitter {
+  font-size: 30px;
 }
 .footer-media li {
   width: 50px;

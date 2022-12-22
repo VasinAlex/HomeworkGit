@@ -114,8 +114,13 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
   line-height: 80px;
   height: 80px;
+  z-index: 100;
 }
 .header .container {
   height: 100%;

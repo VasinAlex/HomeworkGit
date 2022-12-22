@@ -80,7 +80,6 @@ img {
 	top: 0;
 	z-index: 100;
 	backdrop-filter:blur(6px) ;
-	
 		.flex {
 			display: flex;
 			justify-content: space-between;
@@ -89,12 +88,29 @@ img {
 		}
 	.wrap-logo {
 		width: 142px;
-		
+
+	}
+
+	@keyframes translate {
+		0% {
+			transform: translateX(0);
+		}
+
+		30% {
+			transform: translateX(50px);
+
+		}
+		100% {
+			transform: translateX(0px);
+
+		}
 	}
 	.wrap-logo img {
 		object-fit: none;
 		width: 100%;
 		vertical-align: middle;
+		animation: translate 2s linear 2s 1;
+		transition:all .2s ease;
 	}
 	.nav-list {
 		display: flex;
@@ -132,7 +148,6 @@ img {
 	.nav-list__item a {
 		display: inline-block;
 		height: 100%;
-		
 		@extend .lato;
 		text-transform: uppercase;
 		font-size: 14px;
@@ -174,7 +189,6 @@ img {
 
 // --------Main----------
 
-
 main {
 	padding-top: 100px;
 }
@@ -187,7 +201,6 @@ main {
 	&-title {
 		padding-top:100px; 
 		max-width: 770px;
-
 		@extend .redhat;
 		font-weight: 600;
 		@include fz(48);
@@ -207,30 +220,26 @@ section {
 
 .blog {
 	.section__title {
-			padding-bottom: 51px;
-			@extend .redhat;
-			font-weight: 400;
-			font-size: 48px;
-			line-height: 64px;
-			letter-spacing: 0.05em;
-		}
-		.wrap-columns__info {
-		padding-top: 8px;
-		}
+		padding-bottom: 51px;
+		@extend .redhat;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 64px;
+		letter-spacing: 0.05em;
+	}
 }
-
 .wrap-columns {
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	// flex-wrap: wrap;
 	li {
 		display: flex;
+		align-items: center;
 		gap: 32px;
 		padding-bottom:51px;
-		&.revers {
+		&:nth-child(2n) {
 			flex-direction: row-reverse;
-			justify-content: flex-end;
-			.wrap-info {
-				display: flex;
-				justify-content: end;
-			}
 		}
 	}
 	li:last-child {
@@ -238,22 +247,18 @@ section {
 	}
 	&__image {
 		max-width: 570px;
-		& img {
+		 img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 	.wrap-info {
 		max-width: 570px;
-		
-		// margin-left: -3px;
 	}
 	&__info {
-		
 		justify-content: end;
 	}
 }
-
 .info {
 	align-self: center;
 	width: 100%;
@@ -265,15 +270,14 @@ section {
 	&__subtitle {
 		padding-bottom:8px;
 		// max-width: 365px;
-		// flex-basis: 370px;
-		@extend .redhat;
+			@extend .redhat;
 		@include fz(23);
 	}
 	&__date {
 		@extend .lato;
 	}
 	&__text {
-		max-width: 448px;
+		// max-width: 448px;
 		padding-top: 49px;
 		@extend .lato;
 		letter-spacing: 0.055em;
@@ -287,17 +291,6 @@ section {
 }
 
 
-
-// .revers {
-// 	.wrap-columns__image {
-// 		order:2;
-// 	}
-// 	.wrap-info {
-// 		order: 1;
-// 		display: flex;
-// 		justify-content: end;
-// 	}
-// }
 
 // --------Posts----------
 
@@ -325,12 +318,14 @@ section {
 	li{
 		display: flex;
 		flex-basis: 370px;
+		aspect-ratio: 1.32 ;
 		flex-direction: column;
 		gap: 25px;
 		padding-bottom: 22px;
 	}
 }
 .posts .info {
+	align-self: flex-start;
 	&__text {
 		padding-top: 14px;
 	}
@@ -341,6 +336,7 @@ section {
 	&__date {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		@include fz(12);
 		padding-bottom: 25px;
 	}
@@ -365,7 +361,7 @@ section {
 }
 
 .popular .info {
-	max-width: 570px;
+	// max-width: 570px;
 	align-self: start;
 	
 	&__text {
@@ -456,6 +452,7 @@ section {
 }
 
 // -------Footer--------
+
 .bg-grey {
 	background: #F4F4F4;
 }
@@ -490,6 +487,15 @@ section {
 .footer-media {
 	display: flex;
 	gap: 23px;
+	span {
+		font-size: 24px;
+	}
+	.icon-in {
+		font-size: 26px;
+	}
+	.icon-twitter {
+		font-size: 30px;
+	}
 	& li {
 		width: 50px;
 		height: 50px;
@@ -500,6 +506,7 @@ section {
 		border: 1px solid #565656;
 		transition: all .2s ease;
 	}
+
 	& a {
 		color: #565656;
 	}
@@ -524,3 +531,4 @@ section {
 	padding-bottom: 30px;
 	text-align: center;
 }
+
