@@ -111,7 +111,7 @@ function shoppingCalculator() {
 const iHaveManey = prompt('How much money you have?').trim();
 const howMuchIsIt = prompt('How much is it?').trim();
 const howManyPieces = Math.floor(iHaveManey / howMuchIsIt);
-const moneyLeftOver = iHaveManey - (howManyPieces * howMuchIsIt);
+const moneyLeftOver = (iHaveManey - (howManyPieces * howMuchIsIt)).toFixed(2);
 // Не понятно как сделать проверку?
 if (!isNaN(iHaveManey) && iHaveManey !== '')
 if (!isNaN(howMuchIsIt) && howMuchIsIt !== '') {

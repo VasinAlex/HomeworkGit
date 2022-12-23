@@ -105,7 +105,7 @@ function shoppingCalculator() {
   var iHaveManey = prompt('How much money you have?').trim();
   var howMuchIsIt = prompt('How much is it?').trim();
   var howManyPieces = Math.floor(iHaveManey / howMuchIsIt);
-  var moneyLeftOver = iHaveManey - howManyPieces * howMuchIsIt; // Не понятно как сделать проверку?
+  var moneyLeftOver = (iHaveManey - howManyPieces * howMuchIsIt).toFixed(2); // Не понятно как сделать проверку?
 
   if (!isNaN(iHaveManey) && iHaveManey !== '') if (!isNaN(howMuchIsIt) && howMuchIsIt !== '') {
     alert("You can buy ".concat(howManyPieces, " pieces"));
