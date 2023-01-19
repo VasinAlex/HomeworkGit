@@ -1,0 +1,7 @@
+Agent: *
+
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /vendor/
+Sitemap: https://se.org.ua/sitemaps/sitemap.xml
+Host: se.org.ua

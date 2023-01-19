@@ -1,62 +1,211 @@
+@media screen and (min-width: 1361px) {
+  .wrap-dashed {
+    padding: 0 194px;
+  }
+}
+@media screen and (max-width: 1361px) {
+  .wrap-dashed {
+    padding: 0px 14.55588vw;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     width: 94%;
     max-width: 960px;
   }
 
-  .review-info .user-image {
-    max-width: 320px;
-    padding-left: 33.5%;
-  }
-  .review-info__text {
-    padding: 48px 60px;
-    max-width: 640px;
+  .aboutus .container {
+    gap: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .container {
     max-width: 720px;
   }
 
+  .header {
+    height: 136px;
+  }
   .header .container {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .header .header-menu__list {
-    display: flex;
-    gap: 40px;
-    width: 100%;
-    height: 100%;
-    text-transform: uppercase;
+    padding: 19px 0;
   }
 
+  .header.fixed .container {
+    padding: 18px;
+  }
+  .header.fixed .container .wrap-logo {
+    display: none;
+  }
+
+  .aboutus {
+    padding: 60px 0;
+  }
   .aboutus .container {
+    gap: 33px;
     flex-wrap: wrap-reverse;
   }
   .aboutus .wrap-info {
     max-width: 100%;
     text-align: center;
   }
+  .aboutus .info__text {
+    padding: 24px 0;
+  }
   .aboutus .wrap-images {
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    gap: 0;
+    justify-content: space-between;
   }
   .aboutus .wrap-images div + div {
     padding-top: 0;
   }
   .aboutus .wrap-images .image {
-    width: 348px;
+    max-width: 48.334%;
   }
   .aboutus .wrap-btn {
     margin: 0 auto;
+  }
+
+  .steps {
+    padding: 75px 0 60px;
+  }
+  .steps__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+  }
+
+  .wrap-dashed {
+    display: none;
+  }
+
+  .location.top,
+.location.bottom {
+    padding: 120px 0;
+  }
+  .location.top .info__text,
+.location.bottom .info__text {
+    padding: 16px 0 28px;
+  }
+  .location.top .info.grand,
+.location.bottom .info.grand {
+    max-width: 100%;
+  }
+
+  .review {
+    padding: 60px 0 120px;
+  }
+
+  .review-info {
+    display: block;
+  }
+  .review-info .user-image {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .review-info .user-image img {
+    position: relative;
+  }
+  .review-info__text {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container {
+    max-width: 640px;
+  }
+
+  #shadow.show {
+    display: block;
+  }
+
+  #sidebar {
+    display: block;
+  }
+
+  #sidebar .sidebar {
+    display: block;
+    width: fit-content;
+  }
+
+  .header {
+    height: 84px;
+  }
+  .header-menu {
+    display: block;
+  }
+  .header .btn-burger.menu,
+.header .btn-burger.closed {
+    display: block;
+  }
+  .header .container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header.fixed .container .wrap-logo {
+    display: block;
+  }
+
+  .header.fixed .menu {
+    top: 18px;
+  }
+
+  .header .header-menu__list {
+    display: none;
+  }
+
+  #sidebar.open .sidebar-menu__list {
+    display: block;
+    text-align: center;
+  }
+  #sidebar.open .sidebar-menu__list li + li {
+    padding-top: 24px;
   }
 }
 @media screen and (max-width: 576px) {
   .container {
     max-width: 540px;
+  }
+
+  .aboutus .container {
+    gap: 36px;
+  }
+
+  .aboutus .info__text {
+    padding: 21px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .aboutus .wrap-images {
+    gap: 20px;
+  }
+  .aboutus .wrap-images .image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .steps {
+    padding: 60px 0;
+  }
+
+  .location.bottom, .location.top {
+    padding: 60px 0;
+  }
+
+  .review {
+    padding: 60px 0;
   }
 }

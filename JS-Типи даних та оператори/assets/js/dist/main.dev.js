@@ -53,9 +53,9 @@ function sC() {
 
 function vSpeed() {
   var s = parseInt(prompt('Какое расстояние до точки дислокации в километрах?'));
-  var tHaur = parseInt(prompt('За какое время хочешь добраться? Введи часы'));
+  var tHour = parseInt(prompt('За какое время хочешь добраться? Введи часы'));
   var tMin = parseInt(prompt('За какое время хочешь добраться? Введи минуты'));
-  tMin = tHaur * 60 + tMin;
+  tMin = tHour * 60 + tMin;
   s = s * 1000;
   var vSpeed = s / tMin;
   vSpeed = vSpeed / 1000 * 60;

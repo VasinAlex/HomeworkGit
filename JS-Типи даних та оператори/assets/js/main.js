@@ -53,9 +53,9 @@ function sC() {
 
 function vSpeed() {
 	let s = parseInt(prompt('Какое расстояние до точки дислокации в километрах?'));
-	let tHaur = parseInt(prompt('За какое время хочешь добраться? Введи часы'));
+	let tHour = parseInt(prompt('За какое время хочешь добраться? Введи часы'));
 	let tMin = parseInt(prompt('За какое время хочешь добраться? Введи минуты'));
-	tMin = (tHaur * 60 ) + tMin;
+	tMin = (tHour * 60 ) + tMin;
 	s = s * 1000;
 	let vSpeed = s / tMin;
 	vSpeed = vSpeed / 1000 * 60;
@@ -135,11 +135,11 @@ function backwards() {
 		alert('Enter a three-digit number');
 	} else if (number > 999) {
 			alert('Enter a three-digit number');
-		} else {
+	} else {
 				(!isNaN(number) && number !== '') 
 				? alert(`${number} inverse of ${c}${b}${a}`) 
 				: alert(`Enter number`);
-			}
+	}
 }
 
 // Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
