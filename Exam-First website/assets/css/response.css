@@ -33,6 +33,12 @@
     justify-content: center;
     padding: 19px 0;
   }
+  .header .header-menu__list {
+    margin-top: 9px;
+  }
+  .header.fixed .header-menu__list {
+    margin-top: 0px;
+  }
 
   .header.fixed .container {
     padding: 18px;

@@ -56,7 +56,8 @@ ul, ol {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   vertical-align: top;
 }
 
@@ -136,6 +137,7 @@ img {
 	}
 }
 
+
 #shadow {
 	display: none;
 	position: fixed;
@@ -145,7 +147,8 @@ img {
 	top: 0;
 	z-index: 999;
 	background: rgba(0, 0, 0, .5);
-	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	        backdrop-filter: blur(4px);
 }
 #shadow.show {
 display: none;
@@ -211,6 +214,42 @@ display: none;
 		@include fz(18);
 		font-weight: 400; 
 		color: #787878;
+		&::-webkit-input-placeholder {
+			font-family: 'Josefin Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.2em;
+			color: #999999;
+		}
+		&::-moz-placeholder {
+			font-family: 'Josefin Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.2em;
+			color: #999999;
+		}
+		&:-ms-input-placeholder {
+			font-family: 'Josefin Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.2em;
+			color: #999999;
+		}
+		&::-ms-input-placeholder {
+			font-family: 'Josefin Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.2em;
+			color: #999999;
+		}
 		&::placeholder {
 			font-family: 'Josefin Sans';
 			font-style: normal;
@@ -296,7 +335,8 @@ display: none;
 		left: 0;
 		top: 0;
 		background: rgba(83, 115, 253, .4);
-		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px);
+		        backdrop-filter: blur(2px);
 		transition: all .2s ease;
 	}
 	& .closed{
@@ -316,9 +356,7 @@ display: none;
 			width: 165px;
 		}
 	}
-	.header-menu__list{
-		margin-top: 9px;
-	}
+	
 
 	.header-menu__list,
 	.sidebar-menu__list {
@@ -350,10 +388,6 @@ display: none;
 	#sidebar .sidebar-menu__list {
 		display: none;
 		text-align: center;
-
-		li + li {
-			// padding-top: -24px;
-		}
 	}
 	& li {
 		&:hover a::after{
@@ -451,13 +485,6 @@ display: none;
 }
 
 // -------Spets------------
-
-
-
-
-
-
-
 
 .wrap-dashed{
 	position: relative;
@@ -608,7 +635,7 @@ display: none;
 	padding: 220px 0 120px;
 	.container {
 		display: flex;
-		justify-content: end;
+		justify-content: flex-end;
 	}
 }
 
@@ -709,4 +736,3 @@ display: none;
 		color: #ffffff;
 	}
 }
-
