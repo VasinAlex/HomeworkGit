@@ -1,0 +1,5 @@
+Agent: *
+
+Sitemap: https://github.com/VasinAlex/HomeworkGit/blob/master/Exam-First%20website/sitemap.xml
+
+Host: github.com
