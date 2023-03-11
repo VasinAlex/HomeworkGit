@@ -77,9 +77,6 @@ $(function(){
 	
 });
 
-
-
-
 const API_KEY = "4ca2aa1b9f83415e860641a416df62b7";
 
 function getNews(){
@@ -133,48 +130,113 @@ function getNews(){
 		
 		})
 	}
-
 	getNews();
-
-	function newsHTML(news){
+function newsHTML(news){
 		const d = new Date(news.publishedAt);
 		const newsDate = d.getDate()+' '+(d.getMonth()+1)+' '+d.getFullYear();
 		const newsImg = news.urlToImage ? news.urlToImage : `assets/images/noimage.jpg`
 		return `
+
 			<div class="news__item">
-			
 				<div class="news-image">
 					<img data-lazy="${newsImg}" alt="Madrid architecture photographer Joel Filipe">
 				</div>
-	
 				<div class="news-info ">
-	
 					<div class="title">${news.title}</div>
-
 					<div class="text"><p>${news.description}</p></div>
-
 					<div class="author">
-
 						<div class="author-image">
 							<img data-lazy="${newsImg}" alt="Author name">
 						</div>
-
 						<div class="author-info">
 							<span class="author-name">Author name</span>
 							<time datetime="${news.publishedAt}" class="date">${newsDate}</time>
-
 						</div>
-
 					</div>
-	
 				</div>
-
 				<a href="${news.url}" class="news-link" target="_blank"></a>
-	
 			</div>
 		`
 	}
 
+// const API_KEY = "5684706ccfcecf89d161cf52ec2a382d";//gnews
+
+// 	function getNews() {
+// 		axios
+// 			.get(
+// 				"https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=" +
+// 					API_KEY
+// 			)
+// 			.then((resp) => {
+// 				let list = "";
+// 				resp.data.articles.forEach((news) => {
+// 					list += newsHTML(news);
+// 				});
+// 				$("#news-slider").html(list);
+// 				$("#news-slider").slick({
+// 					arrows: true,
+// 					dots: true,
+// 					slidesToShow: 3,
+// 					slidesToScroll: 3,
+// 					infinite: true,
+// 					autoplay: false,
+// 					autoplaySpeed: 4000,
+// 					lazyLoad: "ondemand",
+// 					responsive: [
+// 											{
+// 												breakpoint: 1199,
+// 												settings: {
+// 													slidesToShow: 3,
+// 												}
+// 											},
+// 											{
+// 												breakpoint: 1024,
+// 												settings: {
+// 													slidesToShow: 2,
+// 												}
+// 											},
+// 											{
+// 												breakpoint: 767,
+// 												settings: {
+// 													slidesToShow: 1,
+						
+// 												}
+// 											}
+// 										]
+											
+// 				});
+// 			});
+// 	} 
+// 	getNews();
+
+	
+
+	// function newsHTML(news) {
+	// 	return `
+
+
+	// 	<div class="news__item">
+		
+	// 		<div class="img-wrap"><img data-lazy="${news.image}" alt="img" /></div>
+	// 		<div class="info">
+	// 			<div class="text-wrap">
+	// 				<h4 class="title">${news.title}</h4>
+	// 				<p class="text">${news.content}</p>
+	// 			</div>
+	// 			<div class="author">
+	// 				<div class="avatar" >
+	// 					<img data-lazy="assets/images/section-3/avatar.svg"  alt="img" class="lazy"/>
+	// 				</div>
+	// 				<div class="author-name">
+	// 					<p class="name">${news.source.name}</p>
+	// 					<p class="date">${news.publishedAt}</p>
+	// 				</div>
+	// 			</div>
+	// 		</div>
+	// 		<a href="${news.url}" class="news-link" target="_blank"></a>
+	// 	</div>
+	// `;
+	// }
 
 	// MAP ---------------------------------------
 	const marker = L.icon({
@@ -312,9 +374,4 @@ function submitFeedback(){
 			if (validateEmail(INPUT.value)) INPUT.style.borderColor = 'green';
 			else INPUT.style.borderColor = 'red';
 		}
-		INPUT.addEventListener('input', updateInput);
-
-
-
-
-		
+		INPUT.addEventListener('input', updateInput); 
