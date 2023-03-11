@@ -216,6 +216,9 @@
 	}
 	.review {
     padding: 60px 0;
+		& .title {
+			font-size: 30px;
+		}
 	}
 }
 
