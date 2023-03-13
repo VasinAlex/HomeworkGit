@@ -336,6 +336,7 @@ img {
 		padding-bottom: 20px;
 	}
 }
+
 .item1{
 	background: url(../images/Header1-min.png), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%) top center/ cover no-repeat;
 }
@@ -427,11 +428,9 @@ img {
 	&-menu__list li:active::before{
 		transform:  scale(0.2);
 		background-color: #e1e1e1;
-		box-shadow: 0 0 0px 10px rgb(124, 124, 124) ;
+		box-shadow: 0 0  10px rgb(254, 254, 254) ;
 
 	}
-
-	
 }
 
 /*   ABOUT -------------------------------------*/
@@ -611,7 +610,6 @@ img {
 		position: absolute;
 		top: 16px;
 		left: 16px;
-		
 	}
 	&:hover{
 		border: rgb(255, 255, 255) 1px solid;
@@ -624,7 +622,6 @@ img {
 }
 .arrow-prew {
 	transform: rotate(-45deg);
-	
 }
 .arrow-next {
 	transform: rotate(-225deg);
@@ -634,7 +631,6 @@ img {
 }
 .news__item{
 	position: relative;
-
 }
 .news-link{
 position: absolute;
@@ -659,7 +655,6 @@ left: 0;
 		grid-template-columns: repeat(4, 1fr);
 		width: 100%;
 		height: 100%;
-	
 		img{
 			width: 100%;
 			height: 100%;

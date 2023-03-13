@@ -55,32 +55,100 @@ $(function () {
     });
     return false;
   });
-});
-var API_KEY = "4ca2aa1b9f83415e860641a416df62b7";
+}); // const API_KEY = "4ca2aa1b9f83415e860641a416df62b7";
+// function getNews(){
+// 	axios.get("https://newsapi.org/v2/everything", {
+// 			params: {
+// 				apiKey: API_KEY,
+// 				q:"travel",
+// 				searchIn: "title",
+// 				language: "en",
+// 				pageSize: 15,
+// 				page: 1
+// 			}
+// 		})
+// 		.then(resp=>{
+// 			let list = '';
+// 			resp.data.articles.forEach(news => {
+// 				list += newsHTML(news);
+// 			});
+// 			$('.news-slider').html(list);
+// 			$('.news-slider').slick({
+// 				lazyLoad: 'ondemand',
+// 				dots:true,
+// 				slidesToShow: 3,
+// 				slidesToScroll: 3,
+// 				autoplay: true,
+// 				autoplaySpeed: 4000,
+// 				responsive: [
+// 					{
+// 						breakpoint: 1199,
+// 						settings: {
+// 							slidesToShow: 3,
+// 						}
+// 					},
+// 					{
+// 						breakpoint: 1024,
+// 						settings: {
+// 							slidesToShow: 2,
+// 						}
+// 					},
+// 					{
+// 						breakpoint: 767,
+// 						settings: {
+// 							slidesToShow: 1,
+// 						}
+// 					}
+// 				]
+// 			});
+// 		})
+// 	}
+// 	getNews();
+// function newsHTML(news){
+// 		const d = new Date(news.publishedAt);
+// 		const newsDate = d.getDate()+' '+(d.getMonth()+1)+' '+d.getFullYear();
+// 		const newsImg = news.urlToImage ? news.urlToImage : `assets/images/noimage.jpg`
+// 		return `
+// <div class="news__item">
+// 	<div class="news-image">
+// 		<img data-lazy="${newsImg}" alt="Madrid architecture photographer Joel Filipe">
+// 	</div>
+// 	<div class="news-info">
+// 		<div class="title">${news.title}</div>
+// 		<div class="text"><p>${news.description}</p></div>
+// 		<div class="author">
+// 			<div class="author-image">
+// 				<img data-lazy="${newsImg}" alt="Author name">
+// 			</div>
+// 			<div class="author-info">
+// 				<span class="author-name">Author name</span>
+// 				<time datetime="${news.publishedAt}" class="date">${newsDate}</time>
+// 			</div>
+// 		</div>
+// 	</div>
+// 	<a href="${news.url}" class="news-link" target="_blank"></a>
+// </div>
+// 	`
+// }
+
+var API_KEY = "5684706ccfcecf89d161cf52ec2a382d"; //gnews
 
 function getNews() {
-  axios.get("https://newsapi.org/v2/everything", {
-    params: {
-      apiKey: API_KEY,
-      q: "travel",
-      searchIn: "title",
-      language: "en",
-      pageSize: 15,
-      page: 1
-    }
-  }).then(function (resp) {
-    var list = '';
+  axios.get("https://gnews.io/api/v4/search?q=technologies&lang=en&country=us&max=10&apikey=" + API_KEY).then(function (resp) {
+    var list = "";
     resp.data.articles.forEach(function (news) {
       list += newsHTML(news);
     });
-    $('.news-slider').html(list);
-    $('.news-slider').slick({
-      lazyLoad: 'ondemand',
+    $("#news-slider").html(list);
+    $("#news-slider").slick({
+      arrows: true,
       dots: true,
       slidesToShow: 3,
       slidesToScroll: 3,
-      autoplay: true,
+      infinite: true,
+      autoplay: false,
       autoplaySpeed: 4000,
+      lazyLoad: "ondemand",
       responsive: [{
         breakpoint: 1199,
         settings: {
@@ -104,80 +172,9 @@ function getNews() {
 getNews();
 
 function newsHTML(news) {
-  var d = new Date(news.publishedAt);
-  var newsDate = d.getDate() + ' ' + (d.getMonth() + 1) + ' ' + d.getFullYear();
-  var newsImg = news.urlToImage ? news.urlToImage : "assets/images/noimage.jpg";
-  return "\n\n\t\t\t<div class=\"news__item\">\n\t\t\t\t<div class=\"news-image\">\n\t\t\t\t\t<img data-lazy=\"".concat(newsImg, "\" alt=\"Madrid architecture photographer Joel Filipe\">\n\t\t\t\t</div>\n\t\t\t\t<div class=\"news-info \">\n\t\t\t\t\t<div class=\"title\">").concat(news.title, "</div>\n\t\t\t\t\t<div class=\"text\"><p>").concat(news.description, "</p></div>\n\t\t\t\t\t<div class=\"author\">\n\t\t\t\t\t\t<div class=\"author-image\">\n\t\t\t\t\t\t\t<img data-lazy=\"").concat(newsImg, "\" alt=\"Author name\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"author-info\">\n\t\t\t\t\t\t\t<span class=\"author-name\">Author name</span>\n\t\t\t\t\t\t\t<time datetime=\"").concat(news.publishedAt, "\" class=\"date\">").concat(newsDate, "</time>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<a href=\"").concat(news.url, "\" class=\"news-link\" target=\"_blank\"></a>\n\t\t\t</div>\n\t\t");
-} // const API_KEY = "5684706ccfcecf89d161cf52ec2a382d";//gnews
-// 	function getNews() {
-// 		axios
-// 			.get(
-// 				"https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=" +
-// 					API_KEY
-// 			)
-// 			.then((resp) => {
-// 				let list = "";
-// 				resp.data.articles.forEach((news) => {
-// 					list += newsHTML(news);
-// 				});
-// 				$("#news-slider").html(list);
-// 				$("#news-slider").slick({
-// 					arrows: true,
-// 					dots: true,
-// 					slidesToShow: 3,
-// 					slidesToScroll: 3,
-// 					infinite: true,
-// 					autoplay: false,
-// 					autoplaySpeed: 4000,
-// 					lazyLoad: "ondemand",
-// 					responsive: [
-// 											{
-// 												breakpoint: 1199,
-// 												settings: {
-// 													slidesToShow: 3,
-// 												}
-// 											},
-// 											{
-// 												breakpoint: 1024,
-// 												settings: {
-// 													slidesToShow: 2,
-// 												}
-// 											},
-// 											{
-// 												breakpoint: 767,
-// 												settings: {
-// 													slidesToShow: 1,
-// 												}
-// 											}
-// 										]
-// 				});
-// 			});
-// 	} 
-// 	getNews();
-// function newsHTML(news) {
-// 	return `
-// 	<div class="news__item">
-// 		<div class="img-wrap"><img data-lazy="${news.image}" alt="img" /></div>
-// 		<div class="info">
-// 			<div class="text-wrap">
-// 				<h4 class="title">${news.title}</h4>
-// 				<p class="text">${news.content}</p>
-// 			</div>
-// 			<div class="author">
-// 				<div class="avatar" >
-// 					<img data-lazy="assets/images/section-3/avatar.svg"  alt="img" class="lazy"/>
-// 				</div>
-// 				<div class="author-name">
-// 					<p class="name">${news.source.name}</p>
-// 					<p class="date">${news.publishedAt}</p>
-// 				</div>
-// 			</div>
-// 		</div>
-// 		<a href="${news.url}" class="news-link" target="_blank"></a>
-// 	</div>
-// `;
-// }
-// MAP ---------------------------------------
+  var newsImg = news.image ? news.image : "assets/images/noimage.jpg";
+  return "\n\t\t<div class=\"news__item\">\n\t\t\n\t\t\t<div class=\"news-image\">\n\t\t\t<img data-lazy=\"".concat(newsImg, "\" alt=\"Image\" />\n\t\t\t</div>\n\t\t\t<div class=\"news-info\">\n\t\t\n\t\t\t\t\t<h4 class=\"title\">").concat(news.title, "</h4>\n\t\t\t\t\t<p class=\"text\">").concat(news.content, "</p>\n\t\t\t\n\t\t\t\t<div class=\"author\">\n\t\t\t\t\t<div class=\"author-image\" >\n\t\t\t\t\t\t<img data-lazy=\"").concat(newsImg, "\" alt=\"img\" class=\"lazy\"/>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"author-info\">\n\t\t\t\t\t\t<span class=\"author-name\">").concat(news.source.name, "</span>\n\t\t\t\t\t\t<time class=\"date\">").concat(news.publishedAt, "</time>\n\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<a href=\"").concat(news.url, "\" class=\"news-link\" target=\"_blank\"></a>\n\t\t</div>\n\t");
+} // MAP ---------------------------------------
 
 
 var marker = L.icon({
