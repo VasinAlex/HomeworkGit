@@ -146,7 +146,7 @@
 			padding-top: 15px;
 		}
 		.item {
-			padding: 345px 0;
+			padding: 324px 0;
 		}
 	}
 
@@ -284,6 +284,12 @@
 	}
 	.slick-dots li {
 		margin: 0 7px;
+	}
+	.arrow-next {
+
+		&.down{
+		top: -50px;
+		}
 	}
 	.footer-content {
     display: flex;

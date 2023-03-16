@@ -148,7 +148,7 @@
     padding-top: 15px;
   }
   .first-screen .item {
-    padding: 345px 0;
+    padding: 324px 0;
   }
 
   .about .flex {
@@ -263,6 +263,10 @@
 
   .slick-dots li {
     margin: 0 7px;
+  }
+
+  .arrow-next.down {
+    top: -50px;
   }
 
   .footer-content {
